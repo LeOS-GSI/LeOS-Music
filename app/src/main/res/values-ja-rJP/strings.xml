@@ -408,8 +408,8 @@
     <string name="restored_previous_purchase_please_restart">購入を復元しました。アプリを再起動してフルバージョンをご堪能ください！</string>
     <string name="restored_previous_purchases">購入を復元しました</string>
     <string name="restoring_purchase">購入を復元しています...</string>
-    <string name="retro_music_player">Retro Music Player</string>
-    <string name="retro_music_pro">Retro Music Pro</string>
+    <string name="retro_music_player">LeOS Music Player</string>
+    <string name="retro_music_pro">LeOS Music Pro</string>
     <string name="ringtone_summary">The app needs permission to access your device settings in order to set music as Ringtone</string>
     <string name="ringtone_title">Ringtone (Optional)</string>
     <string name="saf_delete_failed">File delete failed: %s</string>
@@ -489,7 +489,7 @@
     <string name="track_list">トラック番号</string>
     <string name="translate">翻訳</string>
     <string name="translate_community">翻訳を手伝ってください！</string>
-    <string name="try_retro_music_premium">Try Retro Music Premium</string>
+    <string name="try_retro_music_premium">Try LeOS Music Premium</string>
     <string name="twitter_page">ツイッター</string>
     <string name="twitter_page_summary">あなたのデザインを皆に共有しましょう</string>
     <string name="unlabeled">ラベルを表示しない</string>
@@ -498,7 +498,7 @@
     <string name="update_image">画像を更新</string>
     <string name="updating">更新中...</string>
     <string name="user_images_description">User Images</string>
-    <string name="user_name">User Name</string>
+    <string name="user_name">161</string>
     <string name="username">ユーザー名</string>
     <string name="version">バージョン</string>
     <string name="vertical_flip">垂直方向に反転</string>

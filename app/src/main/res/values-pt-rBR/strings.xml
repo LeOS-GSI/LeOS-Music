@@ -149,7 +149,7 @@
     <string name="depth">Profundidade</string>
     <string name="description">Descrição</string>
     <string name="device_info">Informações do dispositivo</string>
-    <string name="dialog_message_set_ringtone">Permite que o Retro Music modifique as configurações de áudio</string>
+    <string name="dialog_message_set_ringtone">Permite que o LeOS Music modifique as configurações de áudio</string>
     <string name="dialog_title_set_ringtone">Definir como toque</string>
     <string name="disc_hint">Número do disco</string>
     <string name="do_you_want_to_clear_the_blacklist">Você quer limpar a lista negra?</string>
@@ -202,7 +202,7 @@
     <string name="import_playlist">Importar playlist</string>
     <string name="import_playlist_message">Importar todas as playlists listadas no Armazenamento de Mídia do Android com suas músicas, se as listas de reprodução já existirem, as músicas serão mescladas.</string>
     <string name="inserted_x_songs_into_playlist_x">%1$d músicas adicionadas na playlist %2$s.</string>
-    <string name="instagram_page_summary">Compartilhe sua personalização do Retro Music no Instagram</string>
+    <string name="instagram_page_summary">Compartilhe sua personalização do LeOS Music no Instagram</string>
     <string name="keyboard">Teclado</string>
     <string name="label_bit_rate">Taxa de bits</string>
     <string name="label_file_format">Formato</string>
@@ -326,7 +326,7 @@
     <string name="pref_summary_home_banner">Mostrar ou esconder o mural inicial</string>
     <string name="pref_summary_ignore_media_store_artwork">Pode aumentar a qualidade da capa do álbum, mas diminui a velocidade de carregamento. Ative isso apenas se você tiver problemas com capas de baixa resolução</string>
     <string name="pref_summary_library_categories">Configurar visibilidade e ordem das categorias da biblioteca.</string>
-    <string name="pref_summary_lock_screen">Usar controles personalizados do Retro Music na tela de bloqueio</string>
+    <string name="pref_summary_lock_screen">Usar controles personalizados do LeOS Music na tela de bloqueio</string>
     <string name="pref_summary_open_source_licences">Detalhes da licença para software de código aberto</string>
     <string name="pref_summary_remember_tab">Navegar para a última aba usada ao iniciar</string>
     <string name="pref_summary_show_lyrics">Mostrar letras sincronizadas sobre a capa do álbum</string>
@@ -409,8 +409,8 @@
     <string name="restored_previous_purchase_please_restart">Compra anterior restaurada. Por favor, reinicie o aplicativo para fazer uso de todos os recursos.</string>
     <string name="restored_previous_purchases">Compras anteriores restauradas.</string>
     <string name="restoring_purchase">Restaurando compra...</string>
-    <string name="retro_music_player">Retro Music Player</string>
-    <string name="retro_music_pro">Retro Music Pro</string>
+    <string name="retro_music_player">LeOS Music Player</string>
+    <string name="retro_music_pro">LeOS Music Pro</string>
     <string name="ringtone_summary">O aplicativo precisa de permissão para acessar as configurações do seu dispositivo para definir músicas como toque</string>
     <string name="ringtone_title">Toque (opcional)</string>
     <string name="saf_delete_failed">Falha ao excluir arquivo: %s</string>
@@ -490,7 +490,7 @@
     <string name="track_list">Número da música</string>
     <string name="translate">Traduzir</string>
     <string name="translate_community">Ajude-nos a traduzir o aplicativo para o seu idioma</string>
-    <string name="try_retro_music_premium">Experimente o Retro Music Premium</string>
+    <string name="try_retro_music_premium">Experimente o LeOS Music Premium</string>
     <string name="twitter_page">Twitter </string>
     <string name="twitter_page_summary">Compartilhe seu design com o Retro Music</string>
     <string name="unlabeled">Não rotulado</string>

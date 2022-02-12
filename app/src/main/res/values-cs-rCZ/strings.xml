@@ -154,7 +154,7 @@
     <string name="depth">Hloubka</string>
     <string name="description">Popis</string>
     <string name="device_info">Informace o zařízení</string>
-    <string name="dialog_message_set_ringtone">Povolit aplikaci Retro Music upravovat nastavení zvuku</string>
+    <string name="dialog_message_set_ringtone">Povolit aplikaci LeOS Music upravovat nastavení zvuku</string>
     <string name="dialog_title_set_ringtone">Nastavit vyzvánění</string>
     <string name="disc_hint">Disc Number</string>
     <string name="do_you_want_to_clear_the_blacklist">Chcete vyčistit černou listinu?</string>
@@ -207,7 +207,7 @@
     <string name="import_playlist">Importovat seznam skladeb</string>
     <string name="import_playlist_message">Importuje všechny seznamy skladeb uvedené v Android Media store, pokud seznam již existuje, seznamy se sloučí.</string>
     <string name="inserted_x_songs_into_playlist_x">Do playlistu %2$s byly vloženy %1$d skladby.</string>
-    <string name="instagram_page_summary">Sdílejte své nastavení Retro Music na Instagramu</string>
+    <string name="instagram_page_summary">Sdílejte své nastavení LeOS Music na Instagramu</string>
     <string name="keyboard">Klávesnice</string>
     <string name="label_bit_rate">Datový tok</string>
     <string name="label_file_format">Formát</string>
@@ -414,8 +414,8 @@
     <string name="restored_previous_purchase_please_restart">Předchozí nákup byl obnoven. Restartujte aplikaci pro využití všech funkcí.</string>
     <string name="restored_previous_purchases">Předchozí nákupy byly obnoveny.</string>
     <string name="restoring_purchase">Obnovuji nákup…</string>
-    <string name="retro_music_player">Retro Music Přehrávač</string>
-    <string name="retro_music_pro">Retro Music Pro</string>
+    <string name="retro_music_player">LeOS Music Přehrávač</string>
+    <string name="retro_music_pro">LeOS Music Pro</string>
     <string name="ringtone_summary">Aplikace potřebuje přístup k nastavení zařízení pro nastavení hudby jako vyzvánění</string>
     <string name="ringtone_title">Ringtone (Optional)</string>
     <string name="saf_delete_failed">Odstranění souboru se nezdařilo: %s</string>
@@ -495,7 +495,7 @@
     <string name="track_list">Číslo skladby</string>
     <string name="translate">Překlad</string>
     <string name="translate_community">Pomožte nám přeložit tuto aplikaci do vašeho jazyka</string>
-    <string name="try_retro_music_premium">Vyzkoušejte Retro Music Premium</string>
+    <string name="try_retro_music_premium">Vyzkoušejte LeOS Music Premium</string>
     <string name="twitter_page">Twitter</string>
     <string name="twitter_page_summary">Sdílejte svůj design s Retro Music</string>
     <string name="unlabeled">Bez štítku</string>

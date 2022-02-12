@@ -154,7 +154,7 @@
     <string name="depth">Głębia</string>
     <string name="description">Opis</string>
     <string name="device_info">Informacje o urządzeniu</string>
-    <string name="dialog_message_set_ringtone">Pozwól Retro Music na modyfikację ustawień dźwięku</string>
+    <string name="dialog_message_set_ringtone">Pozwól LeOS Music na modyfikację ustawień dźwięku</string>
     <string name="dialog_title_set_ringtone">Ustaw jako dzwonek</string>
     <string name="disc_hint">Disc Number</string>
     <string name="do_you_want_to_clear_the_blacklist">Czy chcesz wyczyścić czarną listę?</string>
@@ -207,7 +207,7 @@
     <string name="import_playlist">Importuj playlistę</string>
     <string name="import_playlist_message">It imports all playlists listed in the Android Media Store with songs, if the playlists already exists, the songs will get merged.</string>
     <string name="inserted_x_songs_into_playlist_x">Dodano %1$d utworów do playlisty %2$s.</string>
-    <string name="instagram_page_summary">Udostępnij swój desigm aplikacji Retro Music na Instagramie</string>
+    <string name="instagram_page_summary">Udostępnij swój desigm aplikacji LeOS Music na Instagramie</string>
     <string name="keyboard">Klawiatura</string>
     <string name="label_bit_rate">Jakość</string>
     <string name="label_file_format">Typ</string>
@@ -280,7 +280,7 @@
     <string name="personalize_settings_summary">Dostosuj interfejs i odtwarzacz</string>
     <string name="pick_from_local_storage">Wybierz z pamięci lokalnej</string>
     <string name="pinterest_page">Pinterest</string>
-    <string name="pinterest_page_summary">Śledź stronę Retro Music na Pintrescie po więcej inspiracji</string>
+    <string name="pinterest_page_summary">Śledź stronę LeOS Music na Pintrescie po więcej inspiracji</string>
     <string name="plain">Wyraźny</string>
     <string name="playback_pitch">Pitch</string>
     <string name="playback_settings">Playback Settings</string>
@@ -415,7 +415,7 @@
     <string name="restored_previous_purchases">Przywrócono poprzednie zakupy.</string>
     <string name="restoring_purchase">Przywracanie zakupu...</string>
     <string name="retro_music_player">Odtwarzacz Retro Music</string>
-    <string name="retro_music_pro">Retro Music Pro</string>
+    <string name="retro_music_pro">LeOS Music Pro</string>
     <string name="ringtone_summary">The app needs permission to access your device settings in order to set music as Ringtone</string>
     <string name="ringtone_title">Dzwonek (opcjonalny)</string>
     <string name="saf_delete_failed">Nie udało się usunąć pliku: %s</string>
@@ -495,7 +495,7 @@
     <string name="track_list">Numer utworu</string>
     <string name="translate">Przetłumacz</string>
     <string name="translate_community">Pomóż nam przetłumaczyć aplikację na swój język</string>
-    <string name="try_retro_music_premium">Wypróbuj Retro Music Premium</string>
+    <string name="try_retro_music_premium">Wypróbuj LeOS Music Premium</string>
     <string name="twitter_page">Strona na Twitterze</string>
     <string name="twitter_page_summary">Podziel się swoim designem z Retro Music</string>
     <string name="unlabeled">Niepodpisane</string>

@@ -149,7 +149,7 @@ tiếp tục xảy ra hãy \"Xóa dữ liệu ứng dụng\"</string>
     <string name="depth">Độ sâu</string>
     <string name="description">Mô tả</string>
     <string name="device_info">Thông tin thiết bị</string>
-    <string name="dialog_message_set_ringtone">Cho phép Retro Music cấu hình cài đặt âm thanh</string>
+    <string name="dialog_message_set_ringtone">Cho phép LeOS Music cấu hình cài đặt âm thanh</string>
     <string name="dialog_title_set_ringtone">Cài làm nhạc chuông</string>
     <string name="disc_hint">Disc Number</string>
     <string name="do_you_want_to_clear_the_blacklist">Bạn có muốn xóa danh sách đen?</string>
@@ -202,7 +202,7 @@ tiếp tục xảy ra hãy \"Xóa dữ liệu ứng dụng\"</string>
     <string name="import_playlist">Nhập danh sách phát</string>
     <string name="import_playlist_message">Nhập tất cả danh sách phát có trong Android Media Store cùng với các bài hát, nếu danh sách phát đã tồn tại, các bài hát sẽ được gộp lại.</string>
     <string name="inserted_x_songs_into_playlist_x">Đã chèn %1$d bài hát vào danh sách phát %2$s.</string>
-    <string name="instagram_page_summary">Chia sẻ thiết lập Retro Music của bạn trong Instagram</string>
+    <string name="instagram_page_summary">Chia sẻ thiết lập LeOS Music của bạn trong Instagram</string>
     <string name="keyboard">Bàn phím</string>
     <string name="label_bit_rate">Tốc độ bit</string>
     <string name="label_file_format">Định dạng</string>
@@ -409,8 +409,8 @@ tiếp tục xảy ra hãy \"Xóa dữ liệu ứng dụng\"</string>
     <string name="restored_previous_purchase_please_restart">Khôi phục mua trước đó. Vui lòng khởi động lại ứng dụng để sử dụng tất cả các tính năng.</string>
     <string name="restored_previous_purchases">Đã khôi phục lần mua trước.</string>
     <string name="restoring_purchase">Đang khôi phục mua hàng...</string>
-    <string name="retro_music_player">Retro Music Player</string>
-    <string name="retro_music_pro">Retro Music Pro</string>
+    <string name="retro_music_player">LeOS Music Player</string>
+    <string name="retro_music_pro">LeOS Music Pro</string>
     <string name="ringtone_summary">Ứng dụng cần quyền truy cập cài đặt thiết bị của bạn để đặt nhạc làm Nhạc chuông</string>
     <string name="ringtone_title">Nhạc chuông (Tùy chọn)</string>
     <string name="saf_delete_failed">Xóa tệp thất bại: %s</string>
@@ -490,7 +490,7 @@ tiếp tục xảy ra hãy \"Xóa dữ liệu ứng dụng\"</string>
     <string name="track_list">Số rãnh</string>
     <string name="translate">Dịch</string>
     <string name="translate_community">Hãy giúp chúng tôi dịch ứng dụng sang ngôn ngữ của bạn nhé</string>
-    <string name="try_retro_music_premium">Thử Retro Music Premium</string>
+    <string name="try_retro_music_premium">Thử LeOS Music Premium</string>
     <string name="twitter_page">Twitter</string>
     <string name="twitter_page_summary">Chia sẻ thiết kế của bạn với Retro Music</string>
     <string name="unlabeled">Chưa gắn nhãn</string>

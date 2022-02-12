@@ -152,7 +152,7 @@
     <string name="depth">Depth</string>
     <string name="description">Description</string>
     <string name="device_info">Device info</string>
-    <string name="dialog_message_set_ringtone">Allow Retro Music to modify audio settings</string>
+    <string name="dialog_message_set_ringtone">Allow LeOS Music to modify audio settings</string>
     <string name="dialog_title_set_ringtone">Set ringtone</string>
     <string name="disc_hint">Disc Number</string>
     <string name="do_you_want_to_clear_the_blacklist">Doriți să ștergeți lista neagră?</string>
@@ -205,7 +205,7 @@
     <string name="import_playlist">Import playlist</string>
     <string name="import_playlist_message">It imports all playlists listed in the Android Media Store with songs, if the playlists already exists, the songs will get merged.</string>
     <string name="inserted_x_songs_into_playlist_x">Au fost insertate %1$d cântece în playlist-ul %2$s.</string>
-    <string name="instagram_page_summary">Share your Retro Music setup to showcase on Instagram</string>
+    <string name="instagram_page_summary">Share your LeOS Music setup to showcase on Instagram</string>
     <string name="keyboard">Keyboard</string>
     <string name="label_bit_rate">Bitrate</string>
     <string name="label_file_format">Format</string>
@@ -278,7 +278,7 @@
     <string name="personalize_settings_summary">Personalizează UI si pagina de redare</string>
     <string name="pick_from_local_storage">Alegeți din spațiul de stocare local</string>
     <string name="pinterest_page">Pinterest</string>
-    <string name="pinterest_page_summary">Follow Pinterest page for Retro Music design inspiration</string>
+    <string name="pinterest_page_summary">Follow Pinterest page for LeOS Music design inspiration</string>
     <string name="plain">Simplu</string>
     <string name="playback_pitch">Pitch</string>
     <string name="playback_settings">Playback Settings</string>
@@ -412,7 +412,7 @@
     <string name="restored_previous_purchase_please_restart">A fost restaurată achiziția anterioară. Reporniți aplicația pentru a utiliza toate funcțiile.</string>
     <string name="restored_previous_purchases">Au fost restabilite achizițiile anterioare.</string>
     <string name="restoring_purchase">Se restabilește achiziția...</string>
-    <string name="retro_music_player">Retro Music Player</string>
+    <string name="retro_music_player">LeOS Music Player</string>
     <string name="retro_music_pro">Cumpărați RetroMusic Pro</string>
     <string name="ringtone_summary">The app needs permission to access your device settings in order to set music as Ringtone</string>
     <string name="ringtone_title">Ringtone (Optional)</string>
@@ -493,7 +493,7 @@
     <string name="track_list">Numărul piesei</string>
     <string name="translate">Traducere</string>
     <string name="translate_community">Help us translate the app to your language</string>
-    <string name="try_retro_music_premium">Try Retro Music Premium</string>
+    <string name="try_retro_music_premium">Try LeOS Music Premium</string>
     <string name="twitter_page">Twitter</string>
     <string name="twitter_page_summary">Share your design with Retro Music</string>
     <string name="unlabeled">Unlabeled</string>
@@ -502,7 +502,7 @@
     <string name="update_image">Actualizare imagine</string>
     <string name="updating">Se actualizează...</string>
     <string name="user_images_description">User Images</string>
-    <string name="user_name">User Name</string>
+    <string name="user_name">161</string>
     <string name="username">Username</string>
     <string name="version">Versiune</string>
     <string name="vertical_flip">Vertical flip</string>

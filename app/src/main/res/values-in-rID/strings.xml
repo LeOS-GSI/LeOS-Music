@@ -148,7 +148,7 @@
     <string name="depth">Kedalaman</string>
     <string name="description">Keterangan</string>
     <string name="device_info">Info perangkat</string>
-    <string name="dialog_message_set_ringtone">Izinkan Retro Music untuk mengubah pengaturan audio</string>
+    <string name="dialog_message_set_ringtone">Izinkan LeOS Music untuk mengubah pengaturan audio</string>
     <string name="dialog_title_set_ringtone">Setel nada dering</string>
     <string name="disc_hint">Nomer disk</string>
     <string name="do_you_want_to_clear_the_blacklist">Apakah Anda ingin menghapus daftar hitam?</string>
@@ -408,8 +408,8 @@
     <string name="restored_previous_purchase_please_restart">Restored previous purchase. Please restart the app to make use of all features.</string>
     <string name="restored_previous_purchases">Restored previous purchases.</string>
     <string name="restoring_purchase">Restoring purchase…</string>
-    <string name="retro_music_player">Retro Music Player</string>
-    <string name="retro_music_pro">Retro Music Pro</string>
+    <string name="retro_music_player">LeOS Music Player</string>
+    <string name="retro_music_pro">LeOS Music Pro</string>
     <string name="ringtone_summary">The app needs permission to access your device settings in order to set music as Ringtone</string>
     <string name="ringtone_title">Ringtone (Optional)</string>
     <string name="saf_delete_failed">File delete failed: %s</string>

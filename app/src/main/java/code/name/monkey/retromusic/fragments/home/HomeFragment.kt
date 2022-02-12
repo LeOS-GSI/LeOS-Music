@@ -172,7 +172,7 @@ class HomeFragment :
         }
         val hexColor = String.format("#%06X", 0xFFFFFF and accentColor())
         val appName = HtmlCompat.fromHtml(
-            "Retro <span  style='color:$hexColor';>Music</span>",
+            "LeOS <span  style='color:$hexColor';>Music</span>",
             HtmlCompat.FROM_HTML_MODE_COMPACT
         )
         binding.appNameText.text = appName
