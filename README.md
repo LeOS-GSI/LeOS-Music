@@ -1,35 +1,33 @@
-# Retro Music Player 🎵
+# LeOS Music Player 🎵
 
-[![Generic badge](https://img.shields.io/badge/Platform-Android-green.svg)](https://github.com/RetroMusicPlayer/RetroMusicPlayer)
-[![Build Status](https://github.com/RetroMusicPlayer/RetroMusicPlayer/actions/workflows/android.yml/badge.svg)](https://github.com/RetroMusicPlayer/RetroMusicPlayer/actions/workflows/android.yml)
-[![Generic badge](https://img.shields.io/badge/minSdkVersion-21-green.svg)](https://github.com/RetroMusicPlayer/RetroMusicPlayer)
-[![Generic badge](https://img.shields.io/badge/Download-Google_Play-green.svg)](https://play.google.com/store/apps/details?id=code.name.monkey.retromusic&hl=en_IN)
-[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://github.com/RetroMusicPlayer/RetroMusicPlayer/blob/master/LICENSE.md)
-[![Twitter Follow](https://img.shields.io/twitter/follow/retromusicapp?style=social)](https://twitter.com/retromusicapp)
-[![Crowdin](https://badges.crowdin.net/retromusicplayer/localized.svg)](https://crowdin.com/project/retromusicplayer)
+## 🆕 Material You Design Music Player for LeOS music lovers 
 
-## 🆕 Material You Design Music Player for Android music lovers 
-
-## ⚠ Join [@retromusiclog](https://t.me/retromusiclog) on Telegram for important updates.
+## ⚠ Join us on Telegram (https://t.me/LeOS_Support)
 
 ## Screenshots
 ### App Themes
-| <img src="screenshots/home.jpeg" width="200"/> | <img src="screenshots/home_dark.jpeg" width="200"/> | <img src="screenshots/home_black.jpeg" width="200"/> |
+| <img src="screenshots/home_light.jpg" width="200"/> | <img src="screenshots/home_dark.jpg" width="200"/> | <img src="screenshots/home_black.jpg" width="200"/> |
 |:---:|:---:|:---:|
 |Clearly white| Kinda dark | Just black|
 
 ### Player screen
-| <img src="screenshots/home.jpeg" width="200"/>| <img src="screenshots/list.jpeg" width="200"/>| <img src="screenshots/albums.jpeg" width="200"/>| <img src="screenshots/settings.jpeg" width="200"/>|
-|:---:|:---:|:---:|:---:|
-| Home | Songs | Albums | Settings |
+| <img src="screenshots/home_light.jpg" width="200"/>| <img src="screenshots/songs.jpg" width="200"/>| <img src="screenshots/albums.jpg" width="200"/>| <img src="screenshots/artists.jpg" width="200"/>| <img src="screenshots/settings.jpg" width="200"/>|
+|:---:|:---:|:---:|:---:|:---:|
+| Home | Songs | Albums | Artists | Settings |
+
+### Synced lyrics screen
+| <img src="screenshots/synced_light.jpg" width="200"/>| <img src="screenshots/synced_dark.jpg" width="200"/>| <img src="screenshots/synced_black.jpg" width="200"/>|
+|:---:|:---:|:---:|
+| Synced light | Synced dark | Synced black |
+
 
 ### 9+ Now playing themes
  
-| <img src="screenshots/np_normal.jpeg" width="200"/>	|<img src="screenshots/np_fit.jpeg" width="200"/>|   <img src="screenshots/np_flat.jpeg" width="200"/>  	|    <img src="screenshots/np_color.jpeg" width="200"/> 	|     <img src="screenshots/np_material.jpeg" width="200"/>	|
+| <img src="screenshots/normal.jpg" width="200"/>	|<img src="screenshots/fit.jpg" width="200"/>|   <img src="screenshots/flat.jpg" width="200"/>  	|    <img src="screenshots/color.jpg" width="200"/> 	|     <img src="screenshots/material.jpg" width="200"/>	|
 |:-----:	|:-----:	|:-----:	|:-----:	|:-----:	|
 | Normal 	| Fit 	| Flat 	| Color 	| Material 	|
 
-| <img src="screenshots/no_classic.jpeg" width="200"/>	|<img src="screenshots/np_adaptive.jpeg" width="200"/>|   <img src="screenshots/np_blur.jpeg" width="200"/>  	|    <img src="screenshots/np_tiny.jpeg" width="200"/> 	|     <img src="screenshots/np_peak.jpeg" width="200"/>	|
+| <img src="screenshots/classic.jpg" width="200"/>	|<img src="screenshots/adaptive.jpg" width="200"/>|   <img src="screenshots/blur.jpg" width="200"/>  	|    <img src="screenshots/tiny.jpg" width="200"/> 	|     <img src="screenshots/peak.jpg" width="200"/>	|
 |:-----:	|:-----:	|:-----:	|:-----:	|:-----:	|
 | Classic 	| Adaptive 	| Blur 	| Tiny 	| Peak 	|
 
@@ -80,18 +78,11 @@ Please read the FAQ [here](https://retromusic.app/faq.html)
 In any case, you find or notice any bugs please report them by creating an issue or by contacting us in the [Telegram group](https://t.me/retromusicapp).
 If you have any feature suggestions, please create an issue with detailed information or by contacting us in the [Telegram group](https://t.me/retro_music_suggestion).
 
-### 🔗 Social links
-**Telegram:** https://t.me/retromusicapp <br>
-**Instagram:** https://instagram.com/retromusicapp <br>
-**Crowdin**: https://crowdin.com/project/retromusicplayer <br>
-**Pinterest:** https://pinterest.com/retromusicapp <br>
-**Twitter:** https://twitter.com/retromusicapp <br>
-
 ### 🗂️ License
 
-Retro Music Player is released under the GNU General Public License v3.0
+LeOS Music Player is released under the GNU General Public License v3.0
 (GPLv3), which can be found [here](LICENSE.md)
 
 
->Please note: Retro Music Player is an offline music player app. It
+>Please note: LeOS Music Player is an offline music player app. It
 >doesn't support music downloading or online music streaming.

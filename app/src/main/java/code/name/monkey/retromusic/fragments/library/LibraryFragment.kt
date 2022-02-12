@@ -54,7 +54,7 @@ class LibraryFragment : AbsMainActivityFragment(R.layout.fragment_library) {
         mainActivity.supportActionBar?.title = null
         binding.toolbar.setNavigationOnClickListener {
             findNavController().navigate(
-                R.id.searchFragment,
+                R.id.action_search,
                 null,
                 navOptions
             )
@@ -67,7 +67,7 @@ class LibraryFragment : AbsMainActivityFragment(R.layout.fragment_library) {
         val color = ThemeStore.accentColor(requireContext())
         val hexColor = String.format("#%06X", 0xFFFFFF and color)
         val appName = HtmlCompat.fromHtml(
-            "Retro <span  style='color:$hexColor';>Music</span>",
+            "LeOS <span  style='color:$hexColor';>Music</span>",
             HtmlCompat.FROM_HTML_MODE_COMPACT
         )
         binding.appNameText.text = appName
