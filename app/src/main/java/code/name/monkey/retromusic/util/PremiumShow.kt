@@ -26,7 +26,7 @@ object PremiumShow {
             dateLaunched = System.currentTimeMillis()
             prefEditor.putLong(DATE_FIRST_LAUNCH, dateLaunched)
         }
-        if (System.currentTimeMillis() >= dateLaunched + 2 * 24 * 60 * 60 * 1000) {
+        if (System.currentTimeMillis() >= dateLaunched + 2 * 24 * 60 * 60 * 100000) {
             ActivityCompat.startActivity(
                 context,
                 Intent(context, PurchaseActivity::class.java),
