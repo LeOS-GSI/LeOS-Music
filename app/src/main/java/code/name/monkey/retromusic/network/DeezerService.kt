@@ -15,7 +15,7 @@ import java.io.File
 import java.util.*
 
 private const val BASE_QUERY_ARTIST = "search/artist"
-private const val BASE_URL = "https://api.deezer.com/"
+private const val BASE_URL = "https://api.deezer.at/"
 
 interface DeezerService {
 

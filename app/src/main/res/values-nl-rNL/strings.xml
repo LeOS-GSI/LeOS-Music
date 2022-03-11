@@ -407,7 +407,7 @@
     <string name="reset_artist_image">Reset artiest afbeelding</string>
     <string name="restore">Herstellen</string>
     <string name="restore_message">Do you want to restore backup?</string>
-    <string name="restored_previous_purchase_please_restart">Restored previous purchase. Please restart the app to make use of all features.</string>
+    <string name="restored_previous_purchase_please_restart">Welcome to LeOS-Music</string>
     <string name="restored_previous_purchases">Teruggezette aankopen</string>
     <string name="restoring_purchase">Aankoop herstellen…</string>
     <string name="retro_music_player">LeOS Music Player</string>

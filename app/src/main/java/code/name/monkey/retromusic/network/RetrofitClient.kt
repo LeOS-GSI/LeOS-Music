@@ -73,7 +73,7 @@ fun provideLastFmRest(retrofit: Retrofit): LastFMService {
 
 fun provideDeezerRest(retrofit: Retrofit): DeezerService {
     val newBuilder = retrofit.newBuilder()
-        .baseUrl("https://api.deezer.com/")
+        .baseUrl("https://api.deezer.at/")
         .build()
     return newBuilder.create(DeezerService::class.java)
 }

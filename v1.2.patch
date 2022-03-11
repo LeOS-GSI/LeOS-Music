@@ -560,7 +560,7 @@ index 728c7e913..b15c87fbd 100644
      <string name="playing_notification_description">The playing notification provides actions for play/pause etc.</string>
      <string name="playing_notification_name">Playing notification</string>
 @@ -384,8 +384,8 @@
-     <string name="restored_previous_purchase_please_restart">Restored previous purchase. Please restart the app to make use of all features.</string>
+     <string name="restored_previous_purchase_please_restart">Welcome to LeOS-Music</string>
      <string name="restored_previous_purchases">Restored previous purchases.</string>
      <string name="restoring_purchase">Restoring purchase…</string>
 -    <string name="retro_music_player">Retro Music Player</string>
@@ -986,7 +986,7 @@ index 3dd03d243..27350a2cb 100644
      <string name="playback_pitch">Pitch</string>
      <string name="playback_settings">Playback Settings</string>
 @@ -410,8 +410,8 @@
-     <string name="restored_previous_purchase_please_restart">Restored previous purchase. Please restart the app to make use of all features.</string>
+     <string name="restored_previous_purchase_please_restart">Welcome to LeOS-Music</string>
      <string name="restored_previous_purchases">Restored previous purchases.</string>
      <string name="restoring_purchase">Restoring purchase…</string>
 -    <string name="retro_music_player">Retro Music Player</string>
@@ -1046,7 +1046,7 @@ index 777277130..d5dbabcb7 100644
      <string name="playback_pitch">Pitch</string>
      <string name="playback_settings">Playback Settings</string>
 @@ -412,8 +412,8 @@
-     <string name="restored_previous_purchase_please_restart">Restored previous purchase. Please restart the app to make use of all features.</string>
+     <string name="restored_previous_purchase_please_restart">Welcome to LeOS-Music</string>
      <string name="restored_previous_purchases">Restored previous purchases.</string>
      <string name="restoring_purchase">Restoring purchase…</string>
 -    <string name="retro_music_player">Retro Music Player</string>
@@ -1142,7 +1142,7 @@ index 7300a5a34..75cbd52e5 100644
      <string name="disc_hint">Nomer disk</string>
      <string name="do_you_want_to_clear_the_blacklist">Apakah Anda ingin menghapus daftar hitam?</string>
 @@ -408,8 +408,8 @@
-     <string name="restored_previous_purchase_please_restart">Restored previous purchase. Please restart the app to make use of all features.</string>
+     <string name="restored_previous_purchase_please_restart">Welcome to LeOS-Music</string>
      <string name="restored_previous_purchases">Restored previous purchases.</string>
      <string name="restoring_purchase">Restoring purchase…</string>
 -    <string name="retro_music_player">Retro Music Player</string>
@@ -1387,7 +1387,7 @@ index 4a7355e32..678958d5a 100644
      <string name="playback_pitch">Pitch</string>
      <string name="playback_settings">Playback Settings</string>
 @@ -410,8 +410,8 @@
-     <string name="restored_previous_purchase_please_restart">Restored previous purchase. Please restart the app to make use of all features.</string>
+     <string name="restored_previous_purchase_please_restart">Welcome to LeOS-Music</string>
      <string name="restored_previous_purchases">Restored previous purchases.</string>
      <string name="restoring_purchase">Restoring purchase…</string>
 -    <string name="retro_music_player">Retro Music Player</string>
@@ -1510,7 +1510,7 @@ index f76c6362c..688f2c0af 100644
      <string name="playback_pitch">Pitch</string>
      <string name="playback_settings">Playback Settings</string>
 @@ -410,8 +410,8 @@
-     <string name="restored_previous_purchase_please_restart">Restored previous purchase. Please restart the app to make use of all features.</string>
+     <string name="restored_previous_purchase_please_restart">Welcome to LeOS-Music</string>
      <string name="restored_previous_purchases">Teruggezette aankopen</string>
      <string name="restoring_purchase">Aankoop herstellen…</string>
 -    <string name="retro_music_player">Retro Music Player</string>
@@ -1570,7 +1570,7 @@ index 8b068fce1..69dec533b 100644
      <string name="playback_pitch">Pitch</string>
      <string name="playback_settings">Playback Settings</string>
 @@ -410,8 +410,8 @@
-     <string name="restored_previous_purchase_please_restart">Restored previous purchase. Please restart the app to make use of all features.</string>
+     <string name="restored_previous_purchase_please_restart">Welcome to LeOS-Music</string>
      <string name="restored_previous_purchases">Restored previous purchases.</string>
      <string name="restoring_purchase">Restoring purchase…</string>
 -    <string name="retro_music_player">Retro Music Player</string>
@@ -1630,7 +1630,7 @@ index b46956c24..1a5c9adf2 100644
      <string name="playback_pitch">Pitch</string>
      <string name="playback_settings">Playback Settings</string>
 @@ -410,8 +410,8 @@
-     <string name="restored_previous_purchase_please_restart">Restored previous purchase. Please restart the app to make use of all features.</string>
+     <string name="restored_previous_purchase_please_restart">Welcome to LeOS-Music</string>
      <string name="restored_previous_purchases">Restored previous purchases.</string>
      <string name="restoring_purchase">Restoring purchase…</string>
 -    <string name="retro_music_player">Retro Music Player</string>
@@ -1908,7 +1908,7 @@ index e24549044..a62332213 100644
      <string name="playback_pitch">Pitch</string>
      <string name="playback_settings">Playback Settings</string>
 @@ -412,8 +412,8 @@
-     <string name="restored_previous_purchase_please_restart">Restored previous purchase. Please restart the app to make use of all features.</string>
+     <string name="restored_previous_purchase_please_restart">Welcome to LeOS-Music</string>
      <string name="restored_previous_purchases">Obnovljene su prethodne kupovine</string>
      <string name="restoring_purchase">Restoring purchase…</string>
 -    <string name="retro_music_player">Retro Music Player</string>
@@ -2010,7 +2010,7 @@ index 681617b85..92e8ebe75 100644
      <string name="playback_pitch">Pitch</string>
      <string name="playback_settings">Playback Settings</string>
 @@ -410,8 +410,8 @@
-     <string name="restored_previous_purchase_please_restart">Restored previous purchase. Please restart the app to make use of all features.</string>
+     <string name="restored_previous_purchase_please_restart">Welcome to LeOS-Music</string>
      <string name="restored_previous_purchases">Restored previous purchases.</string>
      <string name="restoring_purchase">Restoring purchase…</string>
 -    <string name="retro_music_player">Retro Music Player</string>
@@ -2361,7 +2361,7 @@ index 6593896bb..2040b7645 100644
      <string name="playback_pitch">Pitch</string>
      <string name="playback_settings">Playback Settings</string>
 @@ -431,8 +431,8 @@
-     <string name="restored_previous_purchase_please_restart">Restored previous purchase. Please restart the app to make use of all features.</string>
+     <string name="restored_previous_purchase_please_restart">Welcome to LeOS-Music</string>
      <string name="restored_previous_purchases">Restored previous purchases.</string>
      <string name="restoring_purchase">Restoring purchase…</string>
 -    <string name="retro_music_player">Retro Music Player</string>

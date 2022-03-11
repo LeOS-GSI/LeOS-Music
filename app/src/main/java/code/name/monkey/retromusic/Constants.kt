@@ -20,19 +20,20 @@ import android.provider.MediaStore
 object Constants {
     const val PRO_VERSION_PRODUCT_ID = "pro_version"
     const val RATE_ON_GOOGLE_PLAY =
-        "https://play.google.com/store/apps/details?id=code.name.monkey.retromusic"
+        "https://leos-gsi.de"
     const val TRANSLATE = "https://crowdin.com/project/retromusicplayer"
     const val WEBSITE = "https://leos-gsi.de"
     const val GITHUB_PROJECT = "https://github.com/LeOS-GSI/LeOS-Music"
     const val TELEGRAM_CHANGE_LOG = "https://t.me/LeOS_Support"
     const val USER_PROFILE = "profile.jpg"
     const val USER_BANNER = "banner.jpg"
-    const val APP_INSTAGRAM_LINK = "https://www.instagram.com/retromusicapp/"
+    const val APP_INSTAGRAM_LINK = "https://www.instagram.com/"
     const val APP_TELEGRAM_LINK = "https://t.me/LeOS_Support"
-    const val APP_TWITTER_LINK = "https://twitter.com/retromusicapp"
+    const val APP_TWITTER_LINK = "https://twitter.com/"
     const val FAQ_LINK = "https://github.com/RetroMusicPlayer/RetroMusicPlayer/blob/master/FAQ.md"
-    const val PINTEREST = "https://in.pinterest.com/retromusicapp/"
+    const val PINTEREST = "https://in.pinterest.com"
     const val AUDIO_SCROBBLER_URL = "https://ws.audioscrobbler.com/2.0/"
+
 
     const val IS_MUSIC =
         MediaStore.Audio.AudioColumns.IS_MUSIC + "=1" + " AND " + MediaStore.Audio.AudioColumns.TITLE + " != ''"
