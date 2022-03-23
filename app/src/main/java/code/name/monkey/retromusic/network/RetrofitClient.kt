@@ -61,7 +61,7 @@ fun provideLastFmRetrofit(client: OkHttpClient): Retrofit {
         .setLenient()
         .create()
     return Retrofit.Builder()
-        .baseUrl("https://ws.audioscrobbler.com/2.0/")
+        .baseUrl("https://ws.audioscrobbler.at/2.0/")
         .addConverterFactory(GsonConverterFactory.create(gson))
         .callFactory { request -> client.newCall(request) }
         .build()
@@ -73,7 +73,7 @@ fun provideLastFmRest(retrofit: Retrofit): LastFMService {
 
 fun provideDeezerRest(retrofit: Retrofit): DeezerService {
     val newBuilder = retrofit.newBuilder()
-        .baseUrl("https://api.deezer.at/")
+        .baseUrl("https://api.deezer.com/")
         .build()
     return newBuilder.create(DeezerService::class.java)
 }

@@ -15,7 +15,6 @@
 package code.name.monkey.retromusic.fragments.search
 
 import android.content.ActivityNotFoundException
-import android.content.Context
 import android.content.Intent
 import android.content.res.ColorStateList
 import android.os.Bundle
@@ -26,6 +25,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.view.inputmethod.InputMethodManager
 import androidx.annotation.IdRes
+import androidx.core.content.getSystemService
 import androidx.core.view.*
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -34,7 +34,10 @@ import code.name.monkey.appthemehelper.ThemeStore
 import code.name.monkey.retromusic.R
 import code.name.monkey.retromusic.adapter.SearchAdapter
 import code.name.monkey.retromusic.databinding.FragmentSearchBinding
-import code.name.monkey.retromusic.extensions.*
+import code.name.monkey.retromusic.extensions.accentColor
+import code.name.monkey.retromusic.extensions.dipToPix
+import code.name.monkey.retromusic.extensions.focusAndShowKeyboard
+import code.name.monkey.retromusic.extensions.showToast
 import code.name.monkey.retromusic.fragments.base.AbsMainActivityFragment
 import code.name.monkey.retromusic.util.PreferenceUtil
 import code.name.monkey.retromusic.views.addAlpha
@@ -43,9 +46,9 @@ import com.google.android.material.chip.ChipGroup
 import com.google.android.material.shape.MaterialShapeDrawable
 import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.transition.MaterialFadeThrough
+import kotlinx.coroutines.Job
 import net.yslibrary.android.keyboardvisibilityevent.KeyboardVisibilityEvent
 import java.util.*
-import kotlin.collections.ArrayList
 
 
 class SearchFragment : AbsMainActivityFragment(R.layout.fragment_search), TextWatcher,
@@ -60,6 +63,8 @@ class SearchFragment : AbsMainActivityFragment(R.layout.fragment_search), TextWa
 
     private lateinit var searchAdapter: SearchAdapter
     private var query: String? = null
+
+    private var job: Job? = null
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -182,7 +187,8 @@ class SearchFragment : AbsMainActivityFragment(R.layout.fragment_search), TextWa
         binding.voiceSearch.isGone = query.isNotEmpty()
         binding.clearText.isVisible = query.isNotEmpty()
         val filter = getFilter()
-        libraryViewModel.search(query, filter)
+        job?.cancel()
+        job = libraryViewModel.search(query, filter)
     }
 
     private fun getFilter(): Filter {
@@ -229,9 +235,9 @@ class SearchFragment : AbsMainActivityFragment(R.layout.fragment_search), TextWa
 
     private fun hideKeyboard(view: View?) {
         if (view != null) {
-            val imm: InputMethodManager =
-                requireContext().getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
-            imm.hideSoftInputFromWindow(view.windowToken, 0)
+            val imm =
+                requireContext().getSystemService<InputMethodManager>()
+            imm?.hideSoftInputFromWindow(view.windowToken, 0)
         }
     }
 

@@ -69,6 +69,8 @@ class App : Application() {
 
                 override fun onBillingInitialized() {}
             })
+
+        // setting Error activity
     }
 
     override fun onTerminate() {

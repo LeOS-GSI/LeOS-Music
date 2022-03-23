@@ -11,7 +11,7 @@
         <item>code_name_monkey_donate_8</item>
     </string-array>
 
-    <string name="app_name" translatable="false">Retro Music</string>
+    <string name="app_name" translatable="false">LeOS Music</string>
     <string name="git_hub" translatable="false">GitHub</string>
 
 
@@ -32,4 +32,7 @@
 
     <bool name="wallpaper_accent_enabled">false</bool>
     <bool name="wallpaper_accent_visible">false</bool>
+
+    <string name="sort_order_album_artist">@string/album_artist</string>
+    <string name="app_widget_circle_name">@string/circle</string>
 </resources>

@@ -40,6 +40,13 @@
             android:summary="@string/pref_summary_suggestions"
             android:title="@string/pref_title_suggestions" />
 
+        <code.name.monkey.appthemehelper.common.prefs.supportv7.ATESwitchPreference
+            android:defaultValue="false"
+            android:key="pause_history"
+            android:layout="@layout/list_item_view_switch"
+            android:summary="@string/pref_summary_pause_history"
+            android:title="@string/pref_title_pause_history" />
+
     </code.name.monkey.appthemehelper.common.prefs.supportv7.ATEPreferenceCategory>
 
     <code.name.monkey.appthemehelper.common.prefs.supportv7.ATEPreferenceCategory
@@ -71,7 +78,7 @@
             android:title="@string/pref_title_tab_text_mode" />
 
         <code.name.monkey.appthemehelper.common.prefs.supportv7.ATEListPreference
-            android:defaultValue="0"
+            android:defaultValue="1"
             android:entries="@array/pref_appbar_mode_titles"
             android:entryValues="@array/pref_appbar_mode_values"
             android:key="appbar_mode"
