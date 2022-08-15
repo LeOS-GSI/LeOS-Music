@@ -15,9 +15,9 @@ android {
 
         vectorDrawables.useSupportLibrary = true
 
-        applicationId namespace
-        versionCode 10597
-        versionName '6.0.2-beta'
+        applicationId "com.harvey186.leos.music"
+        versionCode 1312
+        versionName '6.0.2-LeOS'
 
         buildConfigField("String", "GOOGLE_PLAY_LICENSING_KEY", "\"${getProperty(getProperties('../public.properties'), 'GOOGLE_PLAY_LICENSE_KEY')}\"")
     }

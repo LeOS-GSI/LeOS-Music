@@ -17,12 +17,12 @@ fun Activity.maybeShowAnnoyingToasts() {
     ) {
         if (BuildConfig.DEBUG) {
             // Log these things to console, if the plagiarizer even cares to check it
-            Log.d("Retro Music", "What are you doing with your life?")
-            Log.d("Retro Music", "Stop copying apps and make use of your brain.")
-            Log.d("Retro Music", "Stop doing this or you will end up straight to hell.")
-            Log.d("Retro Music", "To the boiler room of hell. All the way down.")
+            Log.d("LeOS Music", "What are you doing with your life?")
+            Log.d("LeOS Music", "Stop copying apps and make use of your brain.")
+            Log.d("LeOS Music", "Stop doing this or you will end up straight to hell.")
+            Log.d("LeOS Music", "To the boiler room of hell. All the way down.")
         } else {
-            showToast("Warning! This is a copy of Retro Music Player", Toast.LENGTH_LONG)
+            showToast("Warning! This is a copy of LeOS Music Player", Toast.LENGTH_LONG)
             showToast("Instead of using this copy by a dumb person who didn't even bother to remove this code.", Toast.LENGTH_LONG)
             showToast("Support us by downloading the original version from Play Store.", Toast.LENGTH_LONG)
             val packageName = "code.name.monkey.retromusic"

@@ -1,7 +1,7 @@
 <p align="center">
   <a href="https://retromusic.app">
     <img src="app\src\main\ic_launcher-web.png" height="128">
-    <h1 align="center">Retro Music Player 🎵</h1>
+    <h1 align="center">LeOS Music Player 🎵</h1>
   </a>
 </p>
 <p align="center">
@@ -31,19 +31,19 @@
 
 ___
 
-## 🆕 Material You Design Music Player for Android music lovers 
+## 🆕 Material You Design Music Player for Android music lovers
 
 ## ⚠ Join [@retromusiclog](https://telegram.me/retromusiclog) on Telegram for important updates.
 ___
 
 ## 📱 Screenshots
 ### App Themes
-| <img src="fastlane/metadata/android/en-US/images/phoneScreenshots/2.jpg" width="200"/> | <img src="fastlane/metadata/android/en-US/images/phoneScreenshots/3.jpg" width="200"/> | <img src="fastlane/metadata/android/en-US/images/phoneScreenshots/4.jpg" width="200"/> |
+| <img src="screenshots/home_light.jpg" width="200"/> | <img src="screenshots/home_dark.jpg" width="200"/> | <img src="screenshots/home_black.jpg" width="200"/> |
 |:---:|:---:|:---:|
 |Clearly white| Kinda dark | Just black|
 
 ### Player screen
-| <img src="fastlane/metadata/android/en-US/images/phoneScreenshots/2.jpg" width="200"/>| <img src="fastlane/metadata/android/en-US/images/phoneScreenshots/5.jpg" width="200"/>| <img src="fastlane/metadata/android/en-US/images/phoneScreenshots/6.jpg" width="200"/>| <img src="fastlane/metadata/android/en-US/images/phoneScreenshots/7.jpg" width="200"/>| <img src="fastlane/metadata/android/en-US/images/phoneScreenshots/8.jpg" width="200"/>|
+| <img src="screenshots/home_light.jpg" width="200"/>| <img src="screenshots/songs.jpg" width="200"/>| <img src="screenshots/albums.jpg" width="200"/>| <img src="screenshots/artists.jpg" width="200"/>| <img src="screenshots/settings.jpg" width="200"/>|
 |:---:|:---:|:---:|:---:|:---:|
 | Home | Songs | Albums | Artists | Settings |
 
@@ -58,7 +58,7 @@ ___
 | Synced Replace Cover light | Synced Replace Cover dark | Synced Replace Cover black |
 
 ### 10+ Now playing themes
-| <img src="fastlane/metadata/android/en-US/images/phoneScreenshots/1.jpg" width="200"/>	|<img src="screenshots/fit.jpg" width="200"/>|   <img src="screenshots/flat.jpg" width="200"/>  	|    <img src="screenshots/color.jpg" width="200"/> 	|     <img src="screenshots/material.jpg" width="200"/>	|
+| <img src="screenshots/normal.jpg" width="200"/>	|<img src="screenshots/fit.jpg" width="200"/>|   <img src="screenshots/flat.jpg" width="200"/>  	|    <img src="screenshots/color.jpg" width="200"/> 	|     <img src="screenshots/material.jpg" width="200"/>	|
 |:-----:	|:-----:	|:-----:	|:-----:	|:-----:	|
 | Normal 	| Fit 	| Flat 	| Color 	| Material 	|
 
@@ -68,7 +68,7 @@ ___
 
 ___
 
-## 🧭 Navigation never made easier 
+## 🧭 Navigation never made easier
 Self-explanatory interface without overloaded menus.
 
 ## 🎨 Colorful
@@ -106,7 +106,7 @@ favorite songs. No other music player has this feature.
 -  User profile
 -  30+ languages support (help translate the project: [Crowdin](https://crowdin.com/project/retromusicplayer)
 -  Browse and play your music by songs, albums, artists, playlists and
-  genre
+   genre
 -  Smart Auto Playlists - Recently played, most played and history
 -  Build your playlist on the go
 
@@ -130,9 +130,9 @@ If you have any feature suggestions, please create an issue with detailed inform
 
 ## 🗂️ License
 
-Retro Music Player is released under the GNU General Public License v3.0
+LeOS Music Player is released under the GNU General Public License v3.0
 (GPLv3), which can be found [here](LICENSE.md)
 
 
->Please note: Retro Music Player is a local music player app. It
+>Please note: LeOS Music Player is an offline music player app. It
 >doesn't support music downloading or online music streaming.

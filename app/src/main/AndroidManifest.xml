@@ -32,7 +32,7 @@
         android:allowBackup="@bool/allowBackup"
         android:configChanges="locale|layoutDirection"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="LeOS-Music"
         android:requestLegacyExternalStorage="true"
         android:restoreAnyVersion="true"
         android:roundIcon="@mipmap/ic_launcher_round"
@@ -299,7 +299,7 @@
             android:enabled="true"
             android:exported="true"
             android:foregroundServiceType="mediaPlayback"
-            android:label="@string/app_name">
+            android:label="LeOS-Music">
             <intent-filter>
                 <action android:name="android.media.browse.MediaBrowserService" />
             </intent-filter>

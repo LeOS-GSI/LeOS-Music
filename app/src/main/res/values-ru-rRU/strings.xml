@@ -162,7 +162,7 @@
     <string name="depth">Глубина</string>
     <string name="description">Описание</string>
     <string name="device_info">Информация об устройстве</string>
-    <string name="dialog_message_set_ringtone">Разрешить Retro Music изменять настройки звука</string>
+    <string name="dialog_message_set_ringtone">Разрешить LeOS Music изменять настройки звука</string>
     <string name="dialog_title_set_ringtone">Выбрать рингтон</string>
     <string name="disc_hint">Номер диска</string>
     <string name="do_you_want_to_clear_the_blacklist">Вы хотите очистить черный список?</string>
@@ -225,7 +225,7 @@
     <string name="import_playlist">Импорт плейлиста</string>
     <string name="import_playlist_message">Импортирует все плейлисты, перечисленные в Android Media Store с песнями, если плейлисты уже существуют, песни будут объединены.</string>
     <string name="inserted_x_songs_into_playlist_x">В плейлист %2$s внесено %1$d  песен.</string>
-    <string name="instagram_page_summary">Поделитесь своим обзором на приложение Retro Music в Instagram</string>
+    <string name="instagram_page_summary">Поделитесь своим обзором на приложение LeOS Music в Instagram</string>
     <string name="keyboard">Клавиатура</string>
     <string name="label_bit_rate">Битрейт</string>
     <string name="label_file_format">Формат</string>
@@ -307,7 +307,7 @@
     <string name="personalize_settings_summary">Настройте управление экрана воспроизведения и интерфейс управления музыкой</string>
     <string name="pick_from_local_storage">Выбрать из хранилища</string>
     <string name="pinterest_page">Pinterest</string>
-    <string name="pinterest_page_summary">Подпишитесь на страницу Retro Music в Pinterest</string>
+    <string name="pinterest_page_summary">Подпишитесь на страницу LeOS Music в Pinterest</string>
     <string name="plain">Гладкая</string>
     <string name="playList_already_exits">Плейлист уже существует</string>
     <string name="playback_pitch">Высота</string>
@@ -333,7 +333,7 @@
     <string name="pref_header_library">Библиотека</string>
     <string name="pref_header_lockscreen">Экран блокировки</string>
     <string name="pref_header_playlists">Плейлисты</string>
-    <string name="pref_keep_pause_on_zero_volume_summary">Ставит музыку на паузу при уменьшении громкости до нуля и играет после увеличения громкости. Предупреждение, когда вы увеличиваете громкость не в приложении, то Retro Music также начнёт воспроизведение</string>
+    <string name="pref_keep_pause_on_zero_volume_summary">Ставит музыку на паузу при уменьшении громкости до нуля и играет после увеличения громкости. Предупреждение, когда вы увеличиваете громкость не в приложении, то LeOS Music также начнёт воспроизведение</string>
     <string name="pref_keep_pause_on_zero_volume_title">Пауза при нулевой громкости</string>
     <string name="pref_keep_screen_on_summary">Имейте в виду, что включение этой функции может повлиять на заряд батареи</string>
     <string name="pref_keep_screen_on_title">Оставить экран включенным</string>
@@ -360,7 +360,7 @@
     <string name="pref_summary_home_banner">Показывать кнопку Домой</string>
     <string name="pref_summary_ignore_media_store_artwork">Может повысить качество обложки альбома, но привести к более медленной загрузки изображения. Включите это только в том случае, если у вас есть картинки с низким разрешением</string>
     <string name="pref_summary_library_categories">Настроить вид и порядок категорий в библиотеке.</string>
-    <string name="pref_summary_lock_screen">Используйте собственный экран блокировки Retro Music</string>
+    <string name="pref_summary_lock_screen">Используйте собственный экран блокировки LeOS Music</string>
     <string name="pref_summary_manage_audio_focus">Всегда воспроизводить звук в фоне, несмотря на воспроизведение чего-то другого</string>
     <string name="pref_summary_open_source_licences">Сведения о лицензии для программного обеспечения с открытым исходным кодом</string>
     <string name="pref_summary_pause_history">Если включено, то новые песни не будут отображаться в истории</string>
@@ -452,8 +452,8 @@
     <string name="restored_previous_purchase_please_restart">Предыдущая покупка восстановлена. Перезагрузите приложение, чтобы использовать все функции.</string>
     <string name="restored_previous_purchases">Восстановленные предыдущие покупки.</string>
     <string name="restoring_purchase">Восстановление покупки ...</string>
-    <string name="retro_music_player">Retro Music Player</string>
-    <string name="retro_music_pro">Retro Music Pro</string>
+    <string name="retro_music_player">LeOS Music Player</string>
+    <string name="retro_music_pro">LeOS Music Pro</string>
     <string name="ringtone_summary">Приложению требуется разрешение на доступ к настройкам вашего устройства, чтобы установить музыку в качестве рингтона.</string>
     <string name="ringtone_title">Мелодия звонка (необязательно)</string>
     <string name="saf_delete_failed">Ошибка при удалении файла: %s</string>
@@ -533,9 +533,9 @@
     <string name="track_list">Номер трека</string>
     <string name="translate">Переведите</string>
     <string name="translate_community">Помогите нам перевести приложение на ваш язык</string>
-    <string name="try_retro_music_premium">Попробуйте Retro Music Premium</string>
+    <string name="try_retro_music_premium">Попробуйте LeOS Music Premium</string>
     <string name="twitter_page">Твиттер</string>
-    <string name="twitter_page_summary">Поделитесь своим дизайном Retro Music</string>
+    <string name="twitter_page_summary">Поделитесь своим дизайном LeOS Music</string>
     <string name="unlabeled">Не показывать</string>
     <string name="unplayable_file">Невозможно проиграть эту песню</string>
     <string name="up_next">Следующие песни</string>
