@@ -18,8 +18,5 @@
         <item name="colorSurface">@android:color/system_accent1_50</item>
     </style>
 
-    <style name="Theme.RetroMusic.SplashScreen" parent="Theme.SplashScreen">
-        <item name="android:windowSplashScreenAnimatedIcon">@drawable/avd_splash</item>
-        <item name="android:windowSplashScreenAnimationDuration">1000</item>
-    </style>
+
 </resources>
