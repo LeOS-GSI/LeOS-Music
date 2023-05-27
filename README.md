@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://retromusic.app">
+  <a href="https://github.com/LeOS-GSI/LeOS-Music">
     <img src="app\src\main\ic_launcher-web.png" height="128">
     <h1 align="center">LeOS Music Player 🎵</h1>
   </a>
