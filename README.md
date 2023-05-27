@@ -11,6 +11,6 @@ ___
 
 ## 🆕 Material You Design Music Player for Android music lovers
 
-## ⚠ Join [@retromusiclog](https://t.me/LeOS_Support) on Telegram for important updates.
+## ⚠ Join [LeOS-Telegram Group](https://t.me/LeOS_Support) on Telegram for important updates.
 ___
 
