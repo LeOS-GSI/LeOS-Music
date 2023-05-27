@@ -79,7 +79,7 @@ open class BugReportActivity : AbsThemeActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         if (item.itemId == android.R.id.home) {
-            onBackPressedDispatcher.onBackPressed()
+            onBackPressed()
         }
         return super.onOptionsItemSelected(item)
     }

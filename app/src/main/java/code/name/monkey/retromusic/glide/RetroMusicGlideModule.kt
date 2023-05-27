@@ -33,11 +33,7 @@ import java.io.InputStream
 @GlideModule
 class RetroMusicGlideModule : AppGlideModule() {
     override fun registerComponents(context: Context, glide: Glide, registry: Registry) {
-        registry.prepend(
-            PlaylistPreview::class.java,
-            Bitmap::class.java,
-            PlaylistPreviewLoader.Factory(context)
-        )
+        registry.prepend(PlaylistPreview::class.java, Bitmap::class.java, PlaylistPreviewLoader.Factory(context))
         registry.prepend(
             AudioFileCover::class.java,
             InputStream::class.java,

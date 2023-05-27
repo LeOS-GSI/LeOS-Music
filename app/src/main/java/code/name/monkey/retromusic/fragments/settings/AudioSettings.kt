@@ -49,16 +49,11 @@ class AudioSettings : AbsSettingsFragment() {
         if (VersionUtils.hasS()) {
             bluetoothPreference?.setOnPreferenceChangeListener { _, newValue ->
                 if (newValue as Boolean) {
-                    if (ActivityCompat.checkSelfPermission(
-                            requireContext(),
-                            BLUETOOTH_CONNECT
-                        ) != PERMISSION_GRANTED
+                    if (ActivityCompat.checkSelfPermission(requireContext(),
+                            BLUETOOTH_CONNECT) != PERMISSION_GRANTED
                     ) {
-                        ActivityCompat.requestPermissions(
-                            requireActivity(), arrayOf(
-                                BLUETOOTH_CONNECT
-                            ), BLUETOOTH_PERMISSION_REQUEST
-                        )
+                        ActivityCompat.requestPermissions(requireActivity(), arrayOf(
+                            BLUETOOTH_CONNECT), BLUETOOTH_PERMISSION_REQUEST)
                     }
                 }
                 return@setOnPreferenceChangeListener true

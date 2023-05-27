@@ -19,8 +19,8 @@ import android.view.View
 import androidx.core.view.isVisible
 import androidx.fragment.app.FragmentActivity
 import code.name.monkey.retromusic.R
+import code.name.monkey.retromusic.glide.GlideApp
 import code.name.monkey.retromusic.glide.RetroGlideExtension
-import code.name.monkey.retromusic.glide.RetroGlideExtension.songCoverOptions
 import code.name.monkey.retromusic.helper.MusicPlayerRemote
 import code.name.monkey.retromusic.helper.MusicPlayerRemote.isPlaying
 import code.name.monkey.retromusic.helper.MusicPlayerRemote.playNextSong
@@ -28,7 +28,6 @@ import code.name.monkey.retromusic.helper.MusicPlayerRemote.removeFromQueue
 import code.name.monkey.retromusic.model.Song
 import code.name.monkey.retromusic.util.MusicUtil
 import code.name.monkey.retromusic.util.ViewUtil
-import com.bumptech.glide.Glide
 import com.h6ah4i.android.widget.advrecyclerview.draggable.DraggableItemAdapter
 import com.h6ah4i.android.widget.advrecyclerview.draggable.ItemDraggableRange
 import com.h6ah4i.android.widget.advrecyclerview.draggable.annotation.DraggableItemStateFlags
@@ -77,7 +76,7 @@ class PlayingQueueAdapter(
         if (holder.image == null) {
             return
         }
-        Glide.with(activity)
+        GlideApp.with(activity)
             .load(RetroGlideExtension.getSongModel(song))
             .songCoverOptions(song)
             .into(holder.image!!)
@@ -196,7 +195,7 @@ class PlayingQueueAdapter(
         return if (result == SwipeableItemConstants.RESULT_CANCELED) {
             SwipeResultActionDefault()
         } else {
-            SwipedResultActionRemoveItem(this, position)
+            SwipedResultActionRemoveItem(this, position, activity)
         }
     }
 
@@ -217,9 +216,12 @@ class PlayingQueueAdapter(
     internal class SwipedResultActionRemoveItem(
         private val adapter: PlayingQueueAdapter,
         private val position: Int,
+        private val activity: FragmentActivity,
     ) : SwipeResultActionRemoveItem() {
 
         private var songToRemove: Song? = null
+        private val isPlaying: Boolean = MusicPlayerRemote.isPlaying
+        private val songProgressMillis = 0
         override fun onPerformAction() {
             // currentlyShownSnackbar = null
         }

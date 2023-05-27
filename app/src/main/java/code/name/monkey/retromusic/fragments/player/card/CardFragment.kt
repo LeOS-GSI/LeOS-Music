@@ -49,6 +49,11 @@ class CardFragment : AbsPlayerFragment(R.layout.fragment_card_player) {
 
     override fun onHide() {
         playbackControlsFragment.hide()
+        onBackPressed()
+    }
+
+    override fun onBackPressed(): Boolean {
+        return false
     }
 
     override fun toolbarIconColor(): Int {
@@ -92,7 +97,7 @@ class CardFragment : AbsPlayerFragment(R.layout.fragment_card_player) {
     private fun setUpPlayerToolbar() {
         binding.playerToolbar.apply {
             inflateMenu(R.menu.menu_player)
-            setNavigationOnClickListener { requireActivity().onBackPressedDispatcher.onBackPressed() }
+            setNavigationOnClickListener { requireActivity().onBackPressed() }
             setOnMenuItemClickListener(this@CardFragment)
 
             ToolbarContentTintHelper.colorizeToolbar(this, Color.WHITE, activity)

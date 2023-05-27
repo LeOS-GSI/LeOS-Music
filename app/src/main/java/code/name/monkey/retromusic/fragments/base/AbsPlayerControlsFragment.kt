@@ -155,11 +155,6 @@ abstract class AbsPlayerControlsFragment(@LayoutRes layout: Int) : AbsMusicServi
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         progressViewUpdateHelper = MusicProgressViewUpdateHelper(this)
-        if (PreferenceUtil.circlePlayButton) {
-            requireContext().theme.applyStyle(R.style.CircleFABOverlay, true)
-        } else {
-            requireContext().theme.applyStyle(R.style.RoundedFABOverlay, true)
-        }
     }
 
     fun View.showBounceAnimation() {

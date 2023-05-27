@@ -37,9 +37,8 @@ import code.name.monkey.retromusic.extensions.accentColor
 import code.name.monkey.retromusic.extensions.applyToolbar
 import code.name.monkey.retromusic.extensions.showToast
 import code.name.monkey.retromusic.fragments.LibraryViewModel
+import code.name.monkey.retromusic.glide.GlideApp
 import code.name.monkey.retromusic.glide.RetroGlideExtension
-import code.name.monkey.retromusic.glide.RetroGlideExtension.profileBannerOptions
-import code.name.monkey.retromusic.glide.RetroGlideExtension.userProfileOptions
 import code.name.monkey.retromusic.util.ImageUtil
 import code.name.monkey.retromusic.util.PreferenceUtil.userName
 import com.bumptech.glide.Glide
@@ -55,14 +54,14 @@ import com.google.android.material.transition.MaterialContainerTransform
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
-import org.koin.androidx.viewmodel.ext.android.activityViewModel
+import org.koin.androidx.viewmodel.ext.android.sharedViewModel
 import java.io.File
 
 class UserInfoFragment : Fragment() {
 
     private var _binding: FragmentUserInfoBinding? = null
     private val binding get() = _binding!!
-    private val libraryViewModel: LibraryViewModel by activityViewModel()
+    private val libraryViewModel: LibraryViewModel by sharedViewModel()
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -156,12 +155,12 @@ class UserInfoFragment : Fragment() {
 
     private fun loadProfile() {
         binding.bannerImage.let {
-            Glide.with(this)
+            GlideApp.with(this)
                 .load(RetroGlideExtension.getBannerModel())
                 .profileBannerOptions(RetroGlideExtension.getBannerModel())
                 .into(it)
         }
-        Glide.with(this)
+        GlideApp.with(this)
             .load(RetroGlideExtension.getUserModel())
             .userProfileOptions(RetroGlideExtension.getUserModel(), requireContext())
             .into(binding.userImage)
@@ -210,11 +209,9 @@ class UserInfoFragment : Fragment() {
                     doIfResultOk(uri)
                 }
             }
-
             ImagePicker.RESULT_ERROR -> {
                 showToast(ImagePicker.getError(data))
             }
-
             else -> {
                 showToast("Task Cancelled")
             }

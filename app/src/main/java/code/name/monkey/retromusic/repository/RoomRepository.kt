@@ -30,18 +30,20 @@ interface RoomRepository {
     suspend fun favoritePlaylist(favorite: String): PlaylistEntity
     suspend fun isFavoriteSong(songEntity: SongEntity): List<SongEntity>
     suspend fun removeSongFromPlaylist(songEntity: SongEntity)
-    suspend fun upsertSongInHistory(currentSong: Song)
+    suspend fun addSongToHistory(currentSong: Song)
+    suspend fun songPresentInHistory(song: Song): HistoryEntity?
+    suspend fun updateHistorySong(song: Song)
     suspend fun favoritePlaylistSongs(favorite: String): List<SongEntity>
-    suspend fun upsertSongInPlayCount(playCountEntity: PlayCountEntity)
+    suspend fun insertSongInPlayCount(playCountEntity: PlayCountEntity)
+    suspend fun updateSongInPlayCount(playCountEntity: PlayCountEntity)
     suspend fun deleteSongInPlayCount(playCountEntity: PlayCountEntity)
     suspend fun deleteSongInHistory(songId: Long)
     suspend fun clearSongHistory()
-    suspend fun findSongExistInPlayCount(songId: Long): PlayCountEntity?
+    suspend fun checkSongExistInPlayCount(songId: Long): List<PlayCountEntity>
     suspend fun playCountSongs(): List<PlayCountEntity>
     suspend fun deleteSongs(songs: List<Song>)
     suspend fun isSongFavorite(context: Context, songId: Long): Boolean
     fun checkPlaylistExists(playListId: Long): LiveData<Boolean>
-    fun getPlaylist(playlistId: Long): LiveData<PlaylistWithSongs>
 }
 
 class RealRoomRepository(
@@ -78,9 +80,6 @@ class RealRoomRepository(
                 it.playlistEntity.playlistName
             }
         }
-
-    @WorkerThread
-    override fun getPlaylist(playlistId: Long): LiveData<PlaylistWithSongs> = playlistDao.getPlaylist(playlistId)
 
     @WorkerThread
     override suspend fun insertSongs(songs: List<SongEntity>) {
@@ -130,8 +129,14 @@ class RealRoomRepository(
     override suspend fun removeSongFromPlaylist(songEntity: SongEntity) =
         playlistDao.deleteSongFromPlaylist(songEntity.playlistCreatorId, songEntity.id)
 
-    override suspend fun upsertSongInHistory(currentSong: Song) =
-        historyDao.upsertSongInHistory(currentSong.toHistoryEntity(System.currentTimeMillis()))
+    override suspend fun addSongToHistory(currentSong: Song) =
+        historyDao.insertSongInHistory(currentSong.toHistoryEntity(System.currentTimeMillis()))
+
+    override suspend fun songPresentInHistory(song: Song): HistoryEntity? =
+        historyDao.isSongPresentInHistory(song.id)
+
+    override suspend fun updateHistorySong(song: Song) =
+        historyDao.updateHistorySong(song.toHistoryEntity(System.currentTimeMillis()))
 
     override fun observableHistorySongs(): LiveData<List<HistoryEntity>> =
         historyDao.observableHistorySongs()
@@ -146,8 +151,11 @@ class RealRoomRepository(
             playlistDao.playlist(favorite).first().playListId
         ) else emptyList()
 
-    override suspend fun upsertSongInPlayCount(playCountEntity: PlayCountEntity) =
-        playCountDao.upsertSongInPlayCount(playCountEntity)
+    override suspend fun insertSongInPlayCount(playCountEntity: PlayCountEntity) =
+        playCountDao.insertSongInPlayCount(playCountEntity)
+
+    override suspend fun updateSongInPlayCount(playCountEntity: PlayCountEntity) =
+        playCountDao.updateSongInPlayCount(playCountEntity)
 
     override suspend fun deleteSongInPlayCount(playCountEntity: PlayCountEntity) =
         playCountDao.deleteSongInPlayCount(playCountEntity)
@@ -160,8 +168,8 @@ class RealRoomRepository(
         historyDao.clearHistory()
     }
 
-    override suspend fun findSongExistInPlayCount(songId: Long): PlayCountEntity? =
-        playCountDao.findSongExistInPlayCount(songId)
+    override suspend fun checkSongExistInPlayCount(songId: Long): List<PlayCountEntity> =
+        playCountDao.checkSongExistInPlayCount(songId)
 
     override suspend fun playCountSongs(): List<PlayCountEntity> =
         playCountDao.playCountSongs()

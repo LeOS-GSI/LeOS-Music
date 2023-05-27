@@ -8,8 +8,8 @@ import androidx.fragment.app.FragmentActivity
 
 fun Context.setUpMediaRouteButton(menu: Menu) {}
 
-fun FragmentActivity.installLanguageAndRecreate(code: String, onInstallComplete: () -> Unit) {
-    onInstallComplete()
+fun FragmentActivity.installLanguageAndRecreate(code: String) {
+    recreate()
 }
 
 fun Context.goToProVersion() {}

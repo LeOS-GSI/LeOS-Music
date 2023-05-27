@@ -22,13 +22,11 @@ import code.name.monkey.retromusic.repository.RealRepository
 
 class PlaylistDetailsViewModel(
     private val realRepository: RealRepository,
-    private var playlistId: Long
+    private var playlist: PlaylistWithSongs
 ) : ViewModel() {
     fun getSongs(): LiveData<List<SongEntity>> =
-        realRepository.playlistSongs(playlistId)
+        realRepository.playlistSongs(playlist.playlistEntity.playListId)
 
     fun playlistExists(): LiveData<Boolean> =
-        realRepository.checkPlaylistExists(playlistId)
-
-    fun getPlaylist(): LiveData<PlaylistWithSongs> = realRepository.getPlaylist(playlistId)
+        realRepository.checkPlaylistExists(playlist.playlistEntity.playListId)
 }

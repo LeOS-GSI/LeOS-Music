@@ -200,7 +200,7 @@ class MultiPlayer(context: Context) : LocalPlayback(context) {
      * @param whereto The offset in milliseconds from the start to seek to
      * @return The offset in milliseconds from the start to seek to
      */
-    override fun seek(whereto: Int, force: Boolean): Int {
+    override fun seek(whereto: Int): Int {
         return try {
             mCurrentMediaPlayer.seekTo(whereto)
             whereto

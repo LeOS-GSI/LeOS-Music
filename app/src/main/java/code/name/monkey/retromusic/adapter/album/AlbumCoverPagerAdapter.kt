@@ -19,7 +19,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
-import androidx.core.os.BundleCompat
 import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
@@ -29,16 +28,14 @@ import code.name.monkey.retromusic.activities.MainActivity
 import code.name.monkey.retromusic.fragments.AlbumCoverStyle
 import code.name.monkey.retromusic.fragments.NowPlayingScreen.*
 import code.name.monkey.retromusic.fragments.base.goToLyrics
+import code.name.monkey.retromusic.glide.GlideApp
 import code.name.monkey.retromusic.glide.RetroGlideExtension
-import code.name.monkey.retromusic.glide.RetroGlideExtension.asBitmapPalette
-import code.name.monkey.retromusic.glide.RetroGlideExtension.songCoverOptions
 import code.name.monkey.retromusic.glide.RetroMusicColoredTarget
 import code.name.monkey.retromusic.misc.CustomFragmentStatePagerAdapter
 import code.name.monkey.retromusic.model.Song
 import code.name.monkey.retromusic.util.MusicUtil
 import code.name.monkey.retromusic.util.PreferenceUtil
 import code.name.monkey.retromusic.util.color.MediaNotificationProcessor
-import com.bumptech.glide.Glide
 import com.google.android.material.bottomsheet.BottomSheetBehavior.STATE_EXPANDED
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import kotlinx.coroutines.Dispatchers
@@ -98,7 +95,7 @@ class AlbumCoverPagerAdapter(
         override fun onCreate(savedInstanceState: Bundle?) {
             super.onCreate(savedInstanceState)
             if (arguments != null) {
-                song = BundleCompat.getParcelable(requireArguments(), SONG_ARG, Song::class.java)!!
+                song = requireArguments().getParcelable(SONG_ARG)!!
             }
         }
 
@@ -167,9 +164,7 @@ class AlbumCoverPagerAdapter(
         }
 
         private fun loadAlbumCover(albumCover: ImageView) {
-            Glide.with(this)
-                .asBitmapPalette()
-                .songCoverOptions(song)
+            GlideApp.with(this).asBitmapPalette().songCoverOptions(song)
                 //.checkIgnoreMediaStore()
                 .load(RetroGlideExtension.getSongModel(song))
                 .dontAnimate()

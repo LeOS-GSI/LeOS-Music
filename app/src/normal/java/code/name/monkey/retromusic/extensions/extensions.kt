@@ -12,22 +12,20 @@ import com.google.android.play.core.splitinstall.SplitInstallManagerFactory
 import com.google.android.play.core.splitinstall.SplitInstallRequest
 import com.google.android.play.core.splitinstall.SplitInstallSessionState
 import com.google.android.play.core.splitinstall.SplitInstallStateUpdatedListener
-import com.google.android.play.core.splitinstall.model.SplitInstallSessionStatus
 import java.util.*
 
 fun Context.setUpMediaRouteButton(menu: Menu) {
     CastButtonFactory.setUpMediaRouteButton(this, menu, R.id.action_cast)
 }
 
-fun FragmentActivity.installLanguageAndRecreate(code: String, onInstallComplete: () -> Unit) {
+fun FragmentActivity.installLanguageAndRecreate(code: String) {
     var mySessionId = 0
 
     val manager = SplitInstallManagerFactory.create(this)
     val listener = object: SplitInstallStateUpdatedListener{
         override fun onStateUpdate(state: SplitInstallSessionState) {
-            // Restart the activity if the language is installed (sessionId is same and status is installed)
-            if (state.sessionId() == mySessionId && state.status() == SplitInstallSessionStatus.INSTALLED) {
-                onInstallComplete()
+            if (state.sessionId() == mySessionId) {
+                recreate()
                 manager.unregisterListener(this)
             }
         }

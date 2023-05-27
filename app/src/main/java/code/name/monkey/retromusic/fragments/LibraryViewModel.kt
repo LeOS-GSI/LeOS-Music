@@ -311,7 +311,7 @@ class LibraryViewModel(
             if (previousSongHistory.isNotEmpty()) {
                 val history = ArrayList<Song>()
                 for (song in previousSongHistory) {
-                    repository.upsertSongInHistory(song.toSong())
+                    repository.addSongToHistory(song.toSong())
                     history.add(song.toSong())
                 }
                 songHistory.postValue(history)

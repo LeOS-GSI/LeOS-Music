@@ -115,15 +115,13 @@ object MusicPlayerRemote : KoinComponent {
         val realActivity = (context as Activity).parent ?: context
         val contextWrapper = ContextWrapper(realActivity)
         val intent = Intent(contextWrapper, MusicService::class.java)
-
-        // https://issuetracker.google.com/issues/76112072#comment184
-        // Workaround for ForegroundServiceDidNotStartInTimeException
         try {
-            context.startService(intent)
-        } catch (e: Exception) {
-            ContextCompat.startForegroundService(context, intent)
+            contextWrapper.startService(intent)
+        } catch (ignored: IllegalStateException) {
+            runCatching {
+                ContextCompat.startForegroundService(context, intent)
+            }
         }
-
         val binder = ServiceBinder(callback)
 
         if (contextWrapper.bindService(
@@ -418,7 +416,7 @@ object MusicPlayerRemote : KoinComponent {
                     }
                 }
             }
-            if (songs.isNullOrEmpty()) {
+            if (songs == null || songs.isEmpty()) {
                 var songFile: File? = null
                 if (uri.authority != null && uri.authority == "com.android.externalstorage.documents") {
                     val path = uri.path?.split(":".toRegex(), 2)?.get(1)
@@ -438,7 +436,7 @@ object MusicPlayerRemote : KoinComponent {
                     songs = songRepository.songsByFilePath(songFile.absolutePath, true)
                 }
             }
-            if (!songs.isNullOrEmpty()) {
+            if (songs != null && songs.isNotEmpty()) {
                 openQueue(songs, 0, true)
             } else {
                 try {

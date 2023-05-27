@@ -26,8 +26,8 @@ import code.name.monkey.retromusic.db.toSongEntity
 import code.name.monkey.retromusic.extensions.accentColor
 import code.name.monkey.retromusic.extensions.drawAboveSystemBars
 import code.name.monkey.retromusic.glide.BlurTransformation
+import code.name.monkey.retromusic.glide.GlideApp
 import code.name.monkey.retromusic.glide.RetroGlideExtension
-import code.name.monkey.retromusic.glide.RetroGlideExtension.songCoverOptions
 import code.name.monkey.retromusic.helper.MusicPlayerRemote
 import code.name.monkey.retromusic.helper.MusicProgressViewUpdateHelper
 import code.name.monkey.retromusic.helper.MusicProgressViewUpdateHelper.Callback
@@ -36,7 +36,6 @@ import code.name.monkey.retromusic.model.Song
 import code.name.monkey.retromusic.repository.RealRepository
 import code.name.monkey.retromusic.service.MusicService
 import code.name.monkey.retromusic.util.MusicUtil
-import com.bumptech.glide.Glide
 import com.google.android.material.slider.Slider
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -65,7 +64,7 @@ class DriveModeActivity : AbsMusicServiceActivity(), Callback {
         progressViewUpdateHelper = MusicProgressViewUpdateHelper(this)
         lastPlaybackControlsColor = accentColor()
         binding.close.setOnClickListener {
-            onBackPressedDispatcher.onBackPressed()
+            onBackPressed()
         }
         binding.repeatButton.drawAboveSystemBars()
     }
@@ -186,7 +185,6 @@ class DriveModeActivity : AbsMusicServiceActivity(), Callback {
                 lastPlaybackControlsColor,
                 PorterDuff.Mode.SRC_IN
             )
-
             else -> binding.shuffleButton.setColorFilter(
                 lastDisabledPlaybackControlsColor,
                 PorterDuff.Mode.SRC_IN
@@ -203,7 +201,6 @@ class DriveModeActivity : AbsMusicServiceActivity(), Callback {
                     PorterDuff.Mode.SRC_IN
                 )
             }
-
             MusicService.REPEAT_MODE_ALL -> {
                 binding.repeatButton.setImageResource(R.drawable.ic_repeat)
                 binding.repeatButton.setColorFilter(
@@ -211,7 +208,6 @@ class DriveModeActivity : AbsMusicServiceActivity(), Callback {
                     PorterDuff.Mode.SRC_IN
                 )
             }
-
             MusicService.REPEAT_MODE_THIS -> {
                 binding.repeatButton.setImageResource(R.drawable.ic_repeat_one)
                 binding.repeatButton.setColorFilter(
@@ -239,7 +235,7 @@ class DriveModeActivity : AbsMusicServiceActivity(), Callback {
         binding.songTitle.text = song.title
         binding.songText.text = song.artistName
 
-        Glide.with(this)
+        GlideApp.with(this)
             .load(RetroGlideExtension.getSongModel(song))
             .songCoverOptions(song)
             .transform(BlurTransformation.Builder(this).build())

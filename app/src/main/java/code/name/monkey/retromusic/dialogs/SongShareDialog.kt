@@ -17,7 +17,6 @@ package code.name.monkey.retromusic.dialogs
 import android.app.Dialog
 import android.content.Intent
 import android.os.Bundle
-import androidx.core.os.BundleCompat
 import androidx.core.os.bundleOf
 import androidx.fragment.app.DialogFragment
 import code.name.monkey.retromusic.EXTRA_SONG
@@ -30,7 +29,7 @@ import code.name.monkey.retromusic.util.MusicUtil
 
 class SongShareDialog : DialogFragment() {
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
-        val song: Song? = BundleCompat.getParcelable(requireArguments(), EXTRA_SONG, Song::class.java)
+        val song: Song? = requireArguments().getParcelable(EXTRA_SONG)
         val listening: String =
             String.format(
                 getString(R.string.currently_listening_to_x_by_x),

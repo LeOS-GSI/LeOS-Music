@@ -139,7 +139,5 @@ class ThemeSettingsFragment : AbsSettingsFragment() {
 
     override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
         addPreferencesFromResource(R.xml.pref_general)
-        val wallpaperAccent: ATESwitchPreference? = findPreference(WALLPAPER_ACCENT)
-        wallpaperAccent?.isVisible = VersionUtils.hasOreoMR1() && !VersionUtils.hasS()
     }
 }

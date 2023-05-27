@@ -26,13 +26,11 @@ import code.name.monkey.retromusic.extensions.hideStatusBar
 import code.name.monkey.retromusic.extensions.setTaskDescriptionColorAuto
 import code.name.monkey.retromusic.extensions.whichFragment
 import code.name.monkey.retromusic.fragments.player.lockscreen.LockScreenControlsFragment
+import code.name.monkey.retromusic.glide.GlideApp
 import code.name.monkey.retromusic.glide.RetroGlideExtension
-import code.name.monkey.retromusic.glide.RetroGlideExtension.asBitmapPalette
-import code.name.monkey.retromusic.glide.RetroGlideExtension.songCoverOptions
 import code.name.monkey.retromusic.glide.RetroMusicColoredTarget
 import code.name.monkey.retromusic.helper.MusicPlayerRemote
 import code.name.monkey.retromusic.util.color.MediaNotificationProcessor
-import com.bumptech.glide.Glide
 import com.r0adkll.slidr.Slidr
 import com.r0adkll.slidr.model.SlidrConfig
 import com.r0adkll.slidr.model.SlidrListener
@@ -90,7 +88,7 @@ class LockScreenActivity : AbsMusicServiceActivity() {
         } else {
             window.addFlags(
                 WindowManager.LayoutParams.FLAG_SHOW_WHEN_LOCKED
-                //          or WindowManager.LayoutParams.FLAG_TURN_SCREEN_ON
+              //          or WindowManager.LayoutParams.FLAG_TURN_SCREEN_ON
             )
         }
     }
@@ -107,7 +105,7 @@ class LockScreenActivity : AbsMusicServiceActivity() {
 
     private fun updateSongs() {
         val song = MusicPlayerRemote.currentSong
-        Glide.with(this)
+        GlideApp.with(this)
             .asBitmapPalette()
             .songCoverOptions(song)
             .load(RetroGlideExtension.getSongModel(song))

@@ -33,7 +33,7 @@ import code.name.monkey.retromusic.db.PlaylistEntity
 import code.name.monkey.retromusic.db.PlaylistWithSongs
 import code.name.monkey.retromusic.db.toSongs
 import code.name.monkey.retromusic.extensions.dipToPix
-import code.name.monkey.retromusic.glide.RetroGlideExtension.playlistOptions
+import code.name.monkey.retromusic.glide.GlideApp
 import code.name.monkey.retromusic.glide.playlistPreview.PlaylistPreview
 import code.name.monkey.retromusic.helper.SortOrder.PlaylistSortOrder
 import code.name.monkey.retromusic.helper.menu.PlaylistMenuHelper
@@ -42,7 +42,6 @@ import code.name.monkey.retromusic.interfaces.IPlaylistClickListener
 import code.name.monkey.retromusic.model.Song
 import code.name.monkey.retromusic.util.MusicUtil
 import code.name.monkey.retromusic.util.PreferenceUtil
-import com.bumptech.glide.Glide
 import me.zhanghai.android.fastscroll.PopupTextProvider
 
 class PlaylistAdapter(
@@ -106,8 +105,10 @@ class PlaylistAdapter(
             holder.image?.setPadding(activity.dipToPix(8F).toInt())
             holder.image?.setImageDrawable(getIconRes())
         } else {
-            Glide.with(activity)
-                .load(PlaylistPreview(playlist))
+            GlideApp.with(activity)
+                .load(
+                    PlaylistPreview(playlist)
+                )
                 .playlistOptions()
                 .into(holder.image!!)
         }

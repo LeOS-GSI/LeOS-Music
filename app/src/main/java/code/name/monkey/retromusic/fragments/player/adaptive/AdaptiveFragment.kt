@@ -60,7 +60,7 @@ class AdaptiveFragment : AbsPlayerFragment(R.layout.fragment_adaptive_player) {
     private fun setUpPlayerToolbar() {
         binding.playerToolbar.apply {
             inflateMenu(R.menu.menu_player)
-            setNavigationOnClickListener { requireActivity().onBackPressedDispatcher.onBackPressed() }
+            setNavigationOnClickListener { requireActivity().onBackPressed() }
             ToolbarContentTintHelper.colorizeToolbar(this, surfaceColor(), requireActivity())
             setTitleTextColor(textColorPrimary())
             setSubtitleTextColor(textColorSecondary())
@@ -113,6 +113,11 @@ class AdaptiveFragment : AbsPlayerFragment(R.layout.fragment_adaptive_player) {
     }
 
     override fun onHide() {
+        onBackPressed()
+    }
+
+    override fun onBackPressed(): Boolean {
+        return false
     }
 
     override fun onDestroyView() {

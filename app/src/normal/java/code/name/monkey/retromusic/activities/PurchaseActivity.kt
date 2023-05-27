@@ -31,7 +31,7 @@ class PurchaseActivity : AbsThemeActivity(), BillingProcessor.IBillingHandler {
         setStatusBarColor(Color.TRANSPARENT)
         setLightStatusBar(false)
         binding.toolbar.navigationIcon?.setTint(Color.WHITE)
-        binding.toolbar.setNavigationOnClickListener { onBackPressedDispatcher.onBackPressed() }
+        binding.toolbar.setNavigationOnClickListener { onBackPressed() }
 
         binding.restoreButton.isEnabled = false
         binding.purchaseButton.isEnabled = false

@@ -17,16 +17,14 @@ package code.name.monkey.retromusic.adapter.album
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.FragmentActivity
+import code.name.monkey.retromusic.glide.GlideApp
 import code.name.monkey.retromusic.glide.RetroGlideExtension
-import code.name.monkey.retromusic.glide.RetroGlideExtension.albumCoverOptions
-import code.name.monkey.retromusic.glide.RetroGlideExtension.asBitmapPalette
 import code.name.monkey.retromusic.glide.RetroMusicColoredTarget
 import code.name.monkey.retromusic.helper.HorizontalAdapterHelper
 import code.name.monkey.retromusic.interfaces.IAlbumClickListener
 import code.name.monkey.retromusic.model.Album
 import code.name.monkey.retromusic.util.MusicUtil
 import code.name.monkey.retromusic.util.color.MediaNotificationProcessor
-import com.bumptech.glide.Glide
 
 class HorizontalAlbumAdapter(
     activity: FragmentActivity,
@@ -49,9 +47,7 @@ class HorizontalAlbumAdapter(
 
     override fun loadAlbumCover(album: Album, holder: ViewHolder) {
         if (holder.image == null) return
-        Glide.with(activity)
-            .asBitmapPalette()
-            .albumCoverOptions(album.safeGetFirstSong())
+        GlideApp.with(activity).asBitmapPalette().albumCoverOptions(album.safeGetFirstSong())
             .load(RetroGlideExtension.getSongModel(album.safeGetFirstSong()))
             .into(object : RetroMusicColoredTarget(holder.image!!) {
                 override fun onColorReady(colors: MediaNotificationProcessor) {

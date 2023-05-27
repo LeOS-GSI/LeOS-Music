@@ -62,6 +62,10 @@ class TinyPlayerFragment : AbsPlayerFragment(R.layout.fragment_tiny_player),
 
     override fun onHide() {}
 
+    override fun onBackPressed(): Boolean {
+        return false
+    }
+
     override fun toolbarIconColor(): Int {
         return toolbarColor
     }
@@ -155,7 +159,7 @@ class TinyPlayerFragment : AbsPlayerFragment(R.layout.fragment_tiny_player),
     private fun setUpPlayerToolbar() {
         binding.playerToolbar.apply {
             inflateMenu(R.menu.menu_player)
-            setNavigationOnClickListener { requireActivity().onBackPressedDispatcher.onBackPressed() }
+            setNavigationOnClickListener { requireActivity().onBackPressed() }
             setOnMenuItemClickListener(this@TinyPlayerFragment)
         }
     }
@@ -209,8 +213,8 @@ class TinyPlayerFragment : AbsPlayerFragment(R.layout.fragment_tiny_player),
             gestureDetector = GestureDetector(context, object :
                 GestureDetector.SimpleOnGestureListener() {
 
-                override fun onLongPress(e: MotionEvent) {
-                    if (abs(e.y - initialY) <= 2) {
+                override fun onLongPress(e: MotionEvent?) {
+                    if (abs(e!!.y - initialY) <= 2) {
                         vibrate()
                         isDragEnabled = true
                         binding.progressBar.parent.requestDisallowInterceptTouchEvent(true)
@@ -247,7 +251,6 @@ class TinyPlayerFragment : AbsPlayerFragment(R.layout.fragment_tiny_player),
                     initialY = event.y.toInt()
                     progressViewUpdateHelper.stop()
                 }
-
                 MotionEvent.ACTION_UP,
                 MotionEvent.ACTION_CANCEL -> {
                     progressViewUpdateHelper.start()
@@ -257,7 +260,6 @@ class TinyPlayerFragment : AbsPlayerFragment(R.layout.fragment_tiny_player),
                         return true
                     }
                 }
-
                 MotionEvent.ACTION_MOVE -> {
                     if (isDragEnabled) {
                         val diffY = (initialY - event.y).toInt()

@@ -38,8 +38,9 @@ import code.name.monkey.retromusic.fragments.MusicSeekSkipTouchListener
 import code.name.monkey.retromusic.fragments.base.AbsPlayerFragment
 import code.name.monkey.retromusic.fragments.base.goToAlbum
 import code.name.monkey.retromusic.fragments.base.goToArtist
+import code.name.monkey.retromusic.glide.GlideApp
+import code.name.monkey.retromusic.glide.GlideRequest
 import code.name.monkey.retromusic.glide.RetroGlideExtension
-import code.name.monkey.retromusic.glide.RetroGlideExtension.simpleSongCoverOptions
 import code.name.monkey.retromusic.glide.crossfadeListener
 import code.name.monkey.retromusic.helper.MusicPlayerRemote
 import code.name.monkey.retromusic.helper.MusicProgressViewUpdateHelper
@@ -50,8 +51,6 @@ import code.name.monkey.retromusic.util.PreferenceUtil
 import code.name.monkey.retromusic.util.color.MediaNotificationProcessor
 import code.name.monkey.retromusic.volume.AudioVolumeObserver
 import code.name.monkey.retromusic.volume.OnAudioVolumeChangedListener
-import com.bumptech.glide.Glide
-import com.bumptech.glide.RequestBuilder
 import com.google.android.material.slider.Slider
 import me.tankery.lib.circularseekbar.CircularSeekBar
 
@@ -73,8 +72,9 @@ class CirclePlayerFragment : AbsPlayerFragment(R.layout.fragment_circle_player),
     private val binding get() = _binding!!
 
     private var rotateAnimator: ObjectAnimator? = null
-    private var lastRequest: RequestBuilder<Drawable>? = null
+    private var lastRequest: GlideRequest<Drawable>? = null
 
+    private var progressAnimator: ObjectAnimator? = null
     var isSeeking = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -100,7 +100,7 @@ class CirclePlayerFragment : AbsPlayerFragment(R.layout.fragment_circle_player),
     private fun setUpPlayerToolbar() {
         binding.playerToolbar.apply {
             inflateMenu(R.menu.menu_player)
-            setNavigationOnClickListener { requireActivity().onBackPressedDispatcher.onBackPressed() }
+            setNavigationOnClickListener { requireActivity().onBackPressed() }
             setOnMenuItemClickListener(this@CirclePlayerFragment)
             ToolbarContentTintHelper.colorizeToolbar(
                 this,
@@ -129,12 +129,8 @@ class CirclePlayerFragment : AbsPlayerFragment(R.layout.fragment_circle_player),
     private fun setUpPrevNext() {
         updatePrevNextColor()
         binding.nextButton.setOnTouchListener(MusicSeekSkipTouchListener(requireActivity(), true))
-        binding.previousButton.setOnTouchListener(
-            MusicSeekSkipTouchListener(
-                requireActivity(),
-                false
-            )
-        )
+        binding.previousButton.setOnTouchListener(MusicSeekSkipTouchListener(requireActivity(),
+            false))
     }
 
     private fun updatePrevNextColor() {
@@ -195,6 +191,8 @@ class CirclePlayerFragment : AbsPlayerFragment(R.layout.fragment_circle_player),
     override fun onHide() {
     }
 
+    override fun onBackPressed(): Boolean = false
+
     override fun toolbarIconColor(): Int =
         colorControlNormal()
 
@@ -239,11 +237,11 @@ class CirclePlayerFragment : AbsPlayerFragment(R.layout.fragment_circle_player),
         } else {
             binding.songInfo.hide()
         }
-        Glide.with(this)
+        GlideApp.with(this)
             .load(RetroGlideExtension.getSongModel(MusicPlayerRemote.currentSong))
             .simpleSongCoverOptions(MusicPlayerRemote.currentSong)
             .thumbnail(lastRequest)
-            .error(Glide.with(this).load(R.drawable.default_audio_art).fitCenter())
+            .error(GlideApp.with(this).load(R.drawable.default_audio_art).fitCenter())
             .fitCenter().also {
                 lastRequest = it.clone()
                 it.crossfadeListener()

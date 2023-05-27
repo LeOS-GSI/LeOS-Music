@@ -29,6 +29,7 @@ import code.name.monkey.retromusic.R
 import code.name.monkey.retromusic.activities.MainActivity
 import code.name.monkey.retromusic.appwidgets.base.BaseAppWidget
 import code.name.monkey.retromusic.extensions.getTintedDrawable
+import code.name.monkey.retromusic.glide.GlideApp
 import code.name.monkey.retromusic.glide.RetroGlideExtension
 import code.name.monkey.retromusic.service.MusicService
 import code.name.monkey.retromusic.service.MusicService.Companion.ACTION_REWIND
@@ -151,7 +152,7 @@ class AppWidgetBig : BaseAppWidget() {
             if (target != null) {
                 Glide.with(service).clear(target)
             }
-            target = Glide.with(appContext)
+            target = GlideApp.with(appContext)
                 .asBitmap()
                 //.checkIgnoreMediaStore()
                 .load(RetroGlideExtension.getSongModel(song))

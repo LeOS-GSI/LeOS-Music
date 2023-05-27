@@ -27,11 +27,11 @@ import code.name.monkey.retromusic.extensions.extraNotNull
 import code.name.monkey.retromusic.extensions.materialDialog
 import code.name.monkey.retromusic.fragments.LibraryViewModel
 import code.name.monkey.retromusic.fragments.ReloadType
-import org.koin.androidx.viewmodel.ext.android.activityViewModel
+import org.koin.androidx.viewmodel.ext.android.sharedViewModel
 
 class DeletePlaylistDialog : DialogFragment() {
 
-    private val libraryViewModel by activityViewModel<LibraryViewModel>()
+    private val libraryViewModel by sharedViewModel<LibraryViewModel>()
 
     companion object {
 
@@ -55,13 +55,10 @@ class DeletePlaylistDialog : DialogFragment() {
         //noinspection ConstantConditions
         if (playlists.size > 1) {
             title = R.string.delete_playlists_title
-            message =
-                String.format(getString(R.string.delete_x_playlists), playlists.size).parseAsHtml()
+            message = String.format(getString(R.string.delete_x_playlists), playlists.size).parseAsHtml()
         } else {
             title = R.string.delete_playlist_title
-            message =
-                String.format(getString(R.string.delete_playlist_x), playlists[0].playlistName)
-                    .parseAsHtml()
+            message = String.format(getString(R.string.delete_playlist_x), playlists[0].playlistName).parseAsHtml()
         }
 
         return materialDialog(title)

@@ -156,7 +156,7 @@
     <string name="depth">深度</string>
     <string name="description">详情</string>
     <string name="device_info">设备信息</string>
-    <string name="dialog_message_set_ringtone">允许 Retro Music 修改声音设置</string>
+    <string name="dialog_message_set_ringtone">允许 LeOS Music 修改声音设置</string>
     <string name="dialog_title_set_ringtone">设为铃声</string>
     <string name="disc_hint">盘片编号</string>
     <string name="do_you_want_to_clear_the_blacklist">您想清空黑名单吗？</string>
@@ -219,7 +219,7 @@
     <string name="import_playlist">导入播放列表</string>
     <string name="import_playlist_message">这会导入 Android 媒体存储中的所有播放列表，并合并重复的播放列表</string>
     <string name="inserted_x_songs_into_playlist_x">已将 %1$d 首歌曲加入列表 %2$s。</string>
-    <string name="instagram_page_summary">将您的 Retro Music 配置晒到 Instagram</string>
+    <string name="instagram_page_summary">将您的 LeOS Music 配置晒到 Instagram</string>
     <string name="keyboard">键盘</string>
     <string name="label_bit_rate">比特率</string>
     <string name="label_file_format">格式</string>
@@ -301,7 +301,7 @@
     <string name="personalize_settings_summary">自定义正在播放控件和UI控件</string>
     <string name="pick_from_local_storage">从本地存储选取</string>
     <string name="pinterest_page">Pinterest</string>
-    <string name="pinterest_page_summary">在 Pintrest 页面关注 Retro Music 的设计灵感</string>
+    <string name="pinterest_page_summary">在 Pintrest 页面关注 LeOS Music 的设计灵感</string>
     <string name="plain">简洁</string>
     <string name="playList_already_exits">播放列表已存在</string>
     <string name="playback_pitch">音高</string>
@@ -340,8 +340,7 @@
     <string name="pref_summary_blacklist">在媒体库中隐藏列入黑名单的文件夹内容。</string>
     <string name="pref_summary_bluetooth_playback">连接到蓝牙设备后立即开始播放</string>
     <string name="pref_summary_blurred_album_art">模糊化显示锁屏上的专辑封面。可能与第三方应用或微件产生冲突。</string>
-    <string name="pref_summary_carousel_effect">在播放页为专辑图片使用轮播效果。
-使用时卡片和模糊卡片主题不会生效。</string>
+    <string name="pref_summary_carousel_effect">在播放页使用轮播效果。在使用卡片和模糊卡片主题时无效 。</string>
     <string name="pref_summary_classic_notification">使用经典通知样式</string>
     <string name="pref_summary_colored_app">背景及控件颜色跟随专辑封面变化</string>
     <string name="pref_summary_colored_app_shortcuts">将快捷方式颜色更改为强调色，每次颜色更改后需要切换一下该设置才能生效</string>
@@ -355,7 +354,7 @@
     <string name="pref_summary_home_banner">是否显示主页横幅</string>
     <string name="pref_summary_ignore_media_store_artwork">可以提高封面质量，但加载时间较慢。请仅在图片分辨率过低时开启。</string>
     <string name="pref_summary_library_categories">配置媒体库的可见性和顺序</string>
-    <string name="pref_summary_lock_screen">使用 Retro Music 的自定义锁屏</string>
+    <string name="pref_summary_lock_screen">使用 LeOS Music 的自定义锁屏</string>
     <string name="pref_summary_manage_audio_focus">其他内容播放时，在后台继续播放音频</string>
     <string name="pref_summary_open_source_licences">开源许可详情</string>
     <string name="pref_summary_pause_history">启用后，新播放的歌曲不会显示在历史记录中</string>
@@ -447,8 +446,8 @@
     <string name="restored_previous_purchase_please_restart">恢复以前的购买。请重新启动应用以使用所有功能。</string>
     <string name="restored_previous_purchases">恢复之前的购买。</string>
     <string name="restoring_purchase">正在恢复购买…</string>
-    <string name="retro_music_player">Retro Music 播放器</string>
-    <string name="retro_music_pro">Retro Music 高级版</string>
+    <string name="retro_music_player">LeOS Music 播放器</string>
+    <string name="retro_music_pro">LeOS Music 高级版</string>
     <string name="ringtone_summary">应用需要系统设置访问权限，才能将音乐设置为为铃声</string>
     <string name="ringtone_title">铃声（可选）</string>
     <string name="saf_delete_failed">文件删除失败：%s</string>
@@ -511,7 +510,7 @@
     <string name="swipe_to_unlock">滑动以解锁</string>
     <string name="synced_lyrics">滚动歌词</string>
     <string name="telegram_group">Telegram</string>
-    <string name="telegram_group_summary">加入 Telegram 群组，讨论错误，提出建议，水群聊天等等</string>
+    <string name="telegram_group_summary">加入 Telegram 群组，讨论错误，提出建议，吹水聊天等等</string>
     <string name="thank_you">谢谢您！</string>
     <string name="the_audio_file">音频文件</string>
     <string name="this_month">本月</string>
@@ -528,9 +527,9 @@
     <string name="track_list">音轨编号</string>
     <string name="translate">翻译</string>
     <string name="translate_community">帮助我们将应用翻译成您的语言</string>
-    <string name="try_retro_music_premium">试试 Retro Music 高级版</string>
+    <string name="try_retro_music_premium">试试 LeOS Music 高级版</string>
     <string name="twitter_page">Twitter</string>
-    <string name="twitter_page_summary">与 Retro Music 分享您的设计</string>
+    <string name="twitter_page_summary">与 LeOS Music 分享您的设计</string>
     <string name="unlabeled">无标签</string>
     <string name="unplayable_file">无法播放这首歌曲。</string>
     <string name="up_next">下一首</string>

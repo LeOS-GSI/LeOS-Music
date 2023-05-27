@@ -14,38 +14,33 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import code.name.monkey.retromusic.R
 import code.name.monkey.retromusic.adapter.song.OrderablePlaylistSongAdapter
-import code.name.monkey.retromusic.databinding.FragmentPlaylistDetailNewBinding
+import code.name.monkey.retromusic.databinding.FragmentPlaylistDetailBinding
 import code.name.monkey.retromusic.db.PlaylistWithSongs
 import code.name.monkey.retromusic.db.toSongs
-import code.name.monkey.retromusic.extensions.accentColor
-import code.name.monkey.retromusic.extensions.elevatedAccentColor
 import code.name.monkey.retromusic.extensions.surfaceColor
 import code.name.monkey.retromusic.fragments.base.AbsMainActivityFragment
-import code.name.monkey.retromusic.glide.RetroGlideExtension.playlistOptions
-import code.name.monkey.retromusic.glide.playlistPreview.PlaylistPreview
-import code.name.monkey.retromusic.helper.MusicPlayerRemote
 import code.name.monkey.retromusic.helper.menu.PlaylistMenuHelper
 import code.name.monkey.retromusic.model.Song
 import code.name.monkey.retromusic.util.MusicUtil
 import code.name.monkey.retromusic.util.ThemedFastScroller
-import com.bumptech.glide.Glide
 import com.google.android.material.shape.MaterialShapeDrawable
 import com.google.android.material.transition.MaterialArcMotion
 import com.google.android.material.transition.MaterialContainerTransform
 import com.google.android.material.transition.MaterialSharedAxis
 import com.h6ah4i.android.widget.advrecyclerview.animator.DraggableItemAnimator
+import com.h6ah4i.android.widget.advrecyclerview.animator.GeneralItemAnimator
 import com.h6ah4i.android.widget.advrecyclerview.draggable.RecyclerViewDragDropManager
 import org.koin.androidx.viewmodel.ext.android.viewModel
 import org.koin.core.parameter.parametersOf
 
 
-class PlaylistDetailsFragment : AbsMainActivityFragment(R.layout.fragment_playlist_detail_new) {
+class PlaylistDetailsFragment : AbsMainActivityFragment(R.layout.fragment_playlist_detail) {
     private val arguments by navArgs<PlaylistDetailsFragmentArgs>()
     private val viewModel by viewModel<PlaylistDetailsViewModel> {
-        parametersOf(arguments.extraPlaylistId)
+        parametersOf(arguments.extraPlaylist)
     }
 
-    private var _binding: FragmentPlaylistDetailNewBinding? = null
+    private var _binding: FragmentPlaylistDetailBinding? = null
     private val binding get() = _binding!!
 
     private lateinit var playlist: PlaylistWithSongs
@@ -63,26 +58,16 @@ class PlaylistDetailsFragment : AbsMainActivityFragment(R.layout.fragment_playli
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        _binding = FragmentPlaylistDetailNewBinding.bind(view)
+        _binding = FragmentPlaylistDetailBinding.bind(view)
         enterTransition = MaterialSharedAxis(MaterialSharedAxis.Z, true).addTarget(view)
         returnTransition = MaterialSharedAxis(MaterialSharedAxis.Z, false)
         mainActivity.setSupportActionBar(binding.toolbar)
-        binding.toolbar.title = null
-//        binding.container.transitionName = playlist.playlistEntity.playlistName
-
+        binding.container.transitionName = "playlist"
+        playlist = arguments.extraPlaylist
+        binding.toolbar.title = playlist.playlistEntity.playlistName
+        binding.toolbar.subtitle =
+            MusicUtil.getPlaylistInfoString(requireContext(), playlist.songs.toSongs())
         setUpRecyclerView()
-        setupButtons()
-        viewModel.getPlaylist().observe(viewLifecycleOwner) { playlistWithSongs ->
-            playlist = playlistWithSongs
-            Glide.with(this)
-                .load(PlaylistPreview(playlistWithSongs))
-                .playlistOptions()
-                .into(binding.image)
-            binding.title.text = playlist.playlistEntity.playlistName
-            binding.subtitle.text =
-                MusicUtil.getPlaylistInfoString(requireContext(), playlist.songs.toSongs())
-            binding.collapsingAppBarLayout.title = playlist.playlistEntity.playlistName
-        }
         viewModel.getSongs().observe(viewLifecycleOwner) {
             songs(it.toSongs())
         }
@@ -97,24 +82,9 @@ class PlaylistDetailsFragment : AbsMainActivityFragment(R.layout.fragment_playli
             MaterialShapeDrawable.createWithElevationOverlay(requireContext())
     }
 
-    private fun setupButtons() {
-        binding.playButton.apply {
-            setOnClickListener {
-                MusicPlayerRemote.openQueue(playlistSongAdapter.dataSet, 0, true)
-            }
-            accentColor()
-        }
-        binding.shuffleButton.apply {
-            setOnClickListener {
-                MusicPlayerRemote.openAndShuffleQueue(playlistSongAdapter.dataSet, true)
-            }
-            elevatedAccentColor()
-        }
-    }
-
     private fun setUpRecyclerView() {
         playlistSongAdapter = OrderablePlaylistSongAdapter(
-            arguments.extraPlaylistId,
+            playlist.playlistEntity,
             requireActivity(),
             ArrayList(),
             R.layout.item_queue
@@ -125,11 +95,15 @@ class PlaylistDetailsFragment : AbsMainActivityFragment(R.layout.fragment_playli
         val wrappedAdapter: RecyclerView.Adapter<*> =
             dragDropManager.createWrappedAdapter(playlistSongAdapter)
 
+
+        val animator: GeneralItemAnimator = DraggableItemAnimator()
+        binding.recyclerView.itemAnimator = animator
+
+        dragDropManager.attachRecyclerView(binding.recyclerView)
+
         binding.recyclerView.apply {
-            adapter = wrappedAdapter
             layoutManager = LinearLayoutManager(requireContext())
-            itemAnimator = DraggableItemAnimator()
-            dragDropManager.attachRecyclerView(this)
+            binding.recyclerView.adapter = wrappedAdapter
             ThemedFastScroller.create(this)
         }
         playlistSongAdapter.registerAdapterDataObserver(object :

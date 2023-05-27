@@ -77,7 +77,7 @@ class LicenseActivity : AbsThemeActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         if (item.itemId == android.R.id.home) {
-            onBackPressedDispatcher.onBackPressed()
+            onBackPressed()
             return true
         }
         return super.onOptionsItemSelected(item)
