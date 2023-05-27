@@ -61,7 +61,7 @@ class SupportDevelopmentActivity : AbsThemeActivity() {
     }
 
     companion object {
-        const val PAYPAL_URL = "https://paypal.me/quickersilver"
+        const val PAYPAL_URL = "https://paypal.me/LeOSGSI"
         const val KOFI_URL = "https://ko-fi.com/quickersilver"
     }
 }

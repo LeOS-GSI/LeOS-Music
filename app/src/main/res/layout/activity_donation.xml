@@ -73,25 +73,7 @@
                 android:elevation="4dp"
                 android:focusable="true"
                 app:cardCornerRadius="8dp"
-                app:cardUseCompatPadding="true">
-
-                <ImageView
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
-                    android:layout_gravity="center|top"
-                    android:layout_marginVertical="16dp"
-                    android:padding="8dp"
-                    android:src="@drawable/ic_kofi" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="96dp"
-                    android:text="Ko-fi"
-                    android:paddingBottom="16dp"
-                    android:textAppearance="?textAppearanceLabelMedium" />
-            </com.google.android.material.card.MaterialCardView>
+                app:cardUseCompatPadding="true"/>
         </LinearLayout>
 
     </androidx.core.widget.NestedScrollView>
