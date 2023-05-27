@@ -106,7 +106,7 @@
     <string name="bug_report_no_password">Por favor, digite sua senha válida do GitHub</string>
     <string name="bug_report_no_title">Por favor, insira um título do problema</string>
     <string name="bug_report_no_username">Por favor, digite seu nome de usuário válido do GitHub</string>
-    <string name="bug_report_success">Bug reportado com sucesso</string>
+    <string name="bug_report_success">Erro reportado com sucesso</string>
     <string name="bug_report_summary">Um erro inesperado ocorreu. Se você tentar novamente e o erro persistir, use a opção \"Limpar dados do aplicativo\" ou envie-nos um e-mail</string>
     <string name="bug_report_use_account">Enviar usando uma conta do GitHub</string>
     <string name="buy_now">Comprar agora</string>
@@ -158,7 +158,7 @@
     <string name="depth">Profundidade</string>
     <string name="description">Descrição</string>
     <string name="device_info">Informações do dispositivo</string>
-    <string name="dialog_message_set_ringtone">Permite que o LeOS Music modifique as configurações de áudio</string>
+    <string name="dialog_message_set_ringtone">Permite que o LeOS-Music modifique as configurações de áudio</string>
     <string name="dialog_title_set_ringtone">Definir como toque</string>
     <string name="disc_hint">Número do Disco</string>
     <string name="do_you_want_to_clear_the_blacklist">Você quer limpar a lista negra?</string>
@@ -177,7 +177,7 @@
     <string name="error_delete_backup">Não foi possível excluir o backup</string>
     <string name="error_empty_name">Seu nome não pode estar em branco!</string>
     <string name="error_load_failed">Falha ao carregar</string>
-    <string name="error_share_file">Couldn\'t share file</string>
+    <string name="error_share_file">Não foi possível salvar o arquivo</string>
     <string name="expanded">Expandido</string>
     <string name="faq">Perguntas frequentes</string>
     <string name="favorites">Favoritos</string>
@@ -221,7 +221,7 @@
     <string name="import_playlist">Importar playlist</string>
     <string name="import_playlist_message">Importar todas as playlists listadas no Armazenamento de Mídia do Android com suas músicas, se as listas de reprodução já existirem, as músicas serão mescladas.</string>
     <string name="inserted_x_songs_into_playlist_x">%1$d músicas adicionadas na playlist %2$s.</string>
-    <string name="instagram_page_summary">Compartilhe sua personalização do LeOS Music no Instagram</string>
+    <string name="instagram_page_summary">Compartilhe sua personalização do LeOS-Music no Instagram</string>
     <string name="keyboard">Teclado</string>
     <string name="label_bit_rate">Taxa de bits</string>
     <string name="label_file_format">Formato</string>
@@ -303,7 +303,7 @@
     <string name="personalize_settings_summary">Personalizar os controles na tela de reprodução e interface do usuário</string>
     <string name="pick_from_local_storage">Escolha do armazenamento local</string>
     <string name="pinterest_page">Pinterest</string>
-    <string name="pinterest_page_summary">Siga a página no Pinterest para se inspirar no design do LeOS Music</string>
+    <string name="pinterest_page_summary">Siga a página no Pinterest para se inspirar no design do LeOS-Music</string>
     <string name="plain">Plano</string>
     <string name="playList_already_exits">A playlist já existe</string>
     <string name="playback_pitch">Tom</string>
@@ -356,7 +356,7 @@
     <string name="pref_summary_home_banner">Mostrar ou esconder o mural inicial</string>
     <string name="pref_summary_ignore_media_store_artwork">Pode aumentar a qualidade da capa do álbum, mas diminui a velocidade de carregamento. Ative isso apenas se você tiver problemas com capas de baixa resolução</string>
     <string name="pref_summary_library_categories">Configurar visibilidade e ordem das categorias da biblioteca.</string>
-    <string name="pref_summary_lock_screen">Usar controles personalizados do LeOS Music na tela de bloqueio</string>
+    <string name="pref_summary_lock_screen">Usar controles personalizados do LeOS-Music na tela de bloqueio</string>
     <string name="pref_summary_manage_audio_focus">Sempre reproduzir o áudio em segundo plano independentemente de qualquer coisa que esteja sendo reproduzida</string>
     <string name="pref_summary_open_source_licences">Detalhes da licença para software de código aberto</string>
     <string name="pref_summary_pause_history">Quando ativado, as músicas tocadas recentemente não serão exibidas no histórico</string>
@@ -421,7 +421,7 @@
     <string name="pref_title_wallpaper_accent">Cor de destaque do papel de parede</string>
     <string name="pref_title_whitelist">Lista branca</string>
     <string name="pro">Pro</string>
-    <string name="pro_summary">Black theme, Now playing themes, Carousel effect and more..</string>
+    <string name="pro_summary">Tema escuro, Temas na tela de reprodução, Efeito carrossel e mais..</string>
     <string name="profile">Perfil</string>
     <string name="purchase">Comprar</string>
     <string name="queue">Fila</string>
@@ -448,8 +448,8 @@
     <string name="restored_previous_purchase_please_restart">Compra anterior restaurada. Por favor, reinicie o aplicativo para fazer uso de todos os recursos.</string>
     <string name="restored_previous_purchases">Compras anteriores restauradas.</string>
     <string name="restoring_purchase">Restaurando compra...</string>
-    <string name="retro_music_player">LeOS Music Player</string>
-    <string name="retro_music_pro">LeOS Music Pro</string>
+    <string name="retro_music_player">LeOS-Music Player</string>
+    <string name="retro_music_pro">LeOS-Music Pro</string>
     <string name="ringtone_summary">O aplicativo precisa de permissão para acessar as configurações do seu dispositivo para definir músicas como toque</string>
     <string name="ringtone_title">Toque (opcional)</string>
     <string name="saf_delete_failed">Falha ao excluir arquivo: %s</string>
@@ -498,7 +498,7 @@
     <string name="sort_order_composer">Compositor</string>
     <string name="sort_order_date">Data adicionada</string>
     <string name="sort_order_date_modified">Data de alteração</string>
-    <string name="sort_order_default">Default</string>
+    <string name="sort_order_default">Padrão</string>
     <string name="sort_order_num_songs">Quantidade de músicas (crescente)</string>
     <string name="sort_order_num_songs_desc">Quantidade de músicas (decrescente)</string>
     <string name="sort_order_year">Ano</string>
@@ -529,9 +529,9 @@
     <string name="track_list">Número da música</string>
     <string name="translate">Traduzir</string>
     <string name="translate_community">Ajude-nos a traduzir o aplicativo para o seu idioma</string>
-    <string name="try_retro_music_premium">Experimente o LeOS Music Premium</string>
+    <string name="try_retro_music_premium">Experimente o LeOS-Music Premium</string>
     <string name="twitter_page">Twitter </string>
-    <string name="twitter_page_summary">Compartilhe seu design com o LeOS Music</string>
+    <string name="twitter_page_summary">Compartilhe seu design com o LeOS-Music</string>
     <string name="unlabeled">Não rotulado</string>
     <string name="unplayable_file">Não foi possível reproduzir esta música.</string>
     <string name="up_next">A seguir</string>

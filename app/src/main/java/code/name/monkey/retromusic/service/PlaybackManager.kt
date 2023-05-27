@@ -78,7 +78,7 @@ class PlaybackManager(val context: Context) {
         }
     }
 
-    fun seek(millis: Int): Int = playback!!.seek(millis)
+    fun seek(millis: Int, force: Boolean): Int = playback!!.seek(millis, force)
 
     fun setDataSource(
         song: Song,
@@ -88,7 +88,7 @@ class PlaybackManager(val context: Context) {
         playback?.setDataSource(song, force, completion)
     }
 
-    fun setNextDataSource(trackUri: String) {
+    fun setNextDataSource(trackUri: String?) {
         playback?.setNextDataSource(trackUri)
     }
 

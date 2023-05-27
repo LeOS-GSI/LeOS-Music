@@ -158,7 +158,7 @@
     <string name="depth">Profundidade</string>
     <string name="description">Descrição</string>
     <string name="device_info">Info. do dispositivo</string>
-    <string name="dialog_message_set_ringtone">Permitir que Música Retro modifique as definições de áudio</string>
+    <string name="dialog_message_set_ringtone">Permitir que Música LeOS modifique as definições de áudio</string>
     <string name="dialog_title_set_ringtone">Definir toque</string>
     <string name="disc_hint">Número do disco</string>
     <string name="do_you_want_to_clear_the_blacklist">Quer limpar a lista negra?</string>
@@ -221,7 +221,7 @@
     <string name="import_playlist">Importar lista</string>
     <string name="import_playlist_message">Importar todas as lista em Android Media Store com músicas. Se as listas já existirem, as músicas vão ser unidas.</string>
     <string name="inserted_x_songs_into_playlist_x">Inseridas %1$d músicas na lista %2$s.</string>
-    <string name="instagram_page_summary">Partilhar a sua configuração de Música Retro para mostrar no Instagram</string>
+    <string name="instagram_page_summary">Partilhar a sua configuração de Música LeOS para mostrar no Instagram</string>
     <string name="keyboard">Teclado</string>
     <string name="label_bit_rate">Taxa de bits</string>
     <string name="label_file_format">Formato</string>
@@ -449,7 +449,7 @@
     <string name="restored_previous_purchases">Compras anteriores restauradas.</string>
     <string name="restoring_purchase">A restaurar compras…</string>
     <string name="retro_music_player">Música Retro</string>
-    <string name="retro_music_pro">Música Retro Pro</string>
+    <string name="retro_music_pro">Música LeOS Pro</string>
     <string name="ringtone_summary">Esta aplicação necessita de permissão para aceder às definições para definir músicas como toques</string>
     <string name="ringtone_title">Toque (opcional)</string>
     <string name="saf_delete_failed">Erro ao eliminar ficheiro: %s</string>
@@ -529,7 +529,7 @@
     <string name="track_list">Número da faixa</string>
     <string name="translate">Traduzir</string>
     <string name="translate_community">Ajude-nos a traduzir a aplicação para o seu idioma</string>
-    <string name="try_retro_music_premium">Experimente Música Retro Premium</string>
+    <string name="try_retro_music_premium">Experimente Música LeOS Premium</string>
     <string name="twitter_page">Twitter</string>
     <string name="twitter_page_summary">Partilhe o seu design com Música Retro</string>
     <string name="unlabeled">Sem etiqueta</string>

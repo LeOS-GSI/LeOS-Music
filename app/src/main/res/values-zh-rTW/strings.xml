@@ -54,7 +54,7 @@
     <string name="adaptive">適應風</string>
     <string name="add_action">新增</string>
     <string name="add_playlist_title">"新增至播放清單"</string>
-    <string name="add_time_framed_lryics">新增同步歌詞</string>
+    <string name="add_time_framed_lryics">新增動態歌詞</string>
     <string name="added_song_count_to_playlist">已新增 %1$d 首歌至 %2$s</string>
     <string name="added_title_to_playing_queue">"已新增 1 首歌至播放佇列。"</string>
     <string name="added_x_titles_to_playing_queue">已新增 %1$d 首歌至播放佇列。</string>
@@ -156,7 +156,7 @@
     <string name="depth">深度風</string>
     <string name="description">描述</string>
     <string name="device_info">裝置資訊</string>
-    <string name="dialog_message_set_ringtone">允許 LeOS Music 修改音訊設定</string>
+    <string name="dialog_message_set_ringtone">允許 LeOS-Music 修改音訊設定</string>
     <string name="dialog_title_set_ringtone">設定鈴聲</string>
     <string name="disc_hint">光碟編號</string>
     <string name="do_you_want_to_clear_the_blacklist">確定要清除黑名單嗎？</string>
@@ -168,7 +168,7 @@
     <string name="drive_mode">駕駛模式</string>
     <string name="edit_fab">編輯按鈕</string>
     <string name="edit_normal_lyrics">編輯歌詞</string>
-    <string name="edit_synced_lyrics">編輯同步歌詞</string>
+    <string name="edit_synced_lyrics">編輯動態歌詞</string>
     <string name="empty">沒有內容</string>
     <string name="equalizer">等化器</string>
     <string name="error_create_backup">無法建立備份</string>
@@ -219,7 +219,7 @@
     <string name="import_playlist">匯入播放清單</string>
     <string name="import_playlist_message">這將匯入於 Android 媒體商店內全部的播放清單和歌曲，若播放清單已存在，相關的歌曲將會被合併。</string>
     <string name="inserted_x_songs_into_playlist_x">已插入 %1$d 首歌至播放清單 %2$s 。</string>
-    <string name="instagram_page_summary">在 Instagram 上分享 LeOS Music 的配置消息</string>
+    <string name="instagram_page_summary">在 Instagram 上分享 LeOS-Music 的配置消息</string>
     <string name="keyboard">鍵盤</string>
     <string name="label_bit_rate">位元率</string>
     <string name="label_file_format">格式</string>
@@ -255,7 +255,7 @@
     <string name="my_name">名稱</string>
     <string name="my_top_tracks">最佳單曲</string>
     <string name="never">永不</string>
-    <string name="new_music_mix">歌曲快選</string>
+    <string name="new_music_mix">新歌快選</string>
     <string name="new_playlist_title">新增播放清單</string>
     <string name="new_start_directory">%s 為新起始目錄。</string>
     <string name="next_song">下一首</string>
@@ -290,7 +290,7 @@
     <string name="password">密碼</string>
     <string name="past_three_months">過去 3 個月</string>
     <string name="paste_lyrics_here">在此貼上歌詞</string>
-    <string name="paste_timeframe_lyrics_here">在此貼上同步歌詞</string>
+    <string name="paste_timeframe_lyrics_here">在此貼上動態歌詞</string>
     <string name="peek">懸浮風</string>
     <string name="permission_bluetooth_denied">鄰近裝置存取被拒。</string>
     <string name="permission_external_storage_denied">無法取得存取外部儲存空間的權限。</string>
@@ -301,7 +301,7 @@
     <string name="personalize_settings_summary">自訂現正播放畫面 UI</string>
     <string name="pick_from_local_storage">從裝置選擇</string>
     <string name="pinterest_page">Pinterest</string>
-    <string name="pinterest_page_summary">追蹤我們的 Pinterest 專頁以興起 LeOS Music 設計靈感</string>
+    <string name="pinterest_page_summary">追蹤我們的 Pinterest 專頁以興起 LeOS-Music 設計靈感</string>
     <string name="plain">簡潔風</string>
     <string name="playList_already_exits">播放清單已存在</string>
     <string name="playback_pitch">音高</string>
@@ -354,13 +354,13 @@
     <string name="pref_summary_home_banner">顯示或隱藏首頁橫幅</string>
     <string name="pref_summary_ignore_media_store_artwork">可提升專輯封面的成像品質，但會造成較長的讀取時間。建議只有在低畫質專輯封面發生問題時再啟用此選項</string>
     <string name="pref_summary_library_categories">調整音樂庫類別的顯示和排序。</string>
-    <string name="pref_summary_lock_screen">使用 LeOS Music 自訂化鎖定畫面</string>
+    <string name="pref_summary_lock_screen">使用 LeOS-Music 自訂化鎖定畫面</string>
     <string name="pref_summary_manage_audio_focus">無論其他應用程式正在播放為何，永遠於背景播放音訊</string>
     <string name="pref_summary_open_source_licences">開源軟體授權詳細資訊</string>
     <string name="pref_summary_pause_history">啟用此選項後，新播放的歌曲將不再顯示於歷史記錄</string>
     <string name="pref_summary_remember_tab">開啟應用程式後，自動顯示最後瀏覽的畫面</string>
-    <string name="pref_summary_show_lyrics">於專輯封面上顯示同步歌詞</string>
-    <string name="pref_summary_suggestions">於主畫面顯示歌曲快選</string>
+    <string name="pref_summary_show_lyrics">於專輯封面上顯示動態歌詞</string>
+    <string name="pref_summary_suggestions">於主畫面顯示新歌快選</string>
     <string name="pref_summary_swipe_anywhere_now_playing">啟用於現正播放畫面，可隨意滑動以切換歌曲</string>
     <string name="pref_summary_swipe_to_dismiss">向下滑動以關閉迷你播放器</string>
     <string name="pref_summary_toggle_full_screen">沉浸模式</string>
@@ -424,7 +424,7 @@
     <string name="purchase">購買</string>
     <string name="queue">播放佇列</string>
     <string name="rate_app">評分</string>
-    <string name="rate_on_google_play_summary">您還喜歡 LeOS Music 嗎？歡迎在 Play 商店上評論，使我們能日臻完善</string>
+    <string name="rate_on_google_play_summary">您還喜歡 LeOS-Music 嗎？歡迎在 Play 商店上評論，使我們能日臻完善</string>
     <string name="recent_albums">最近專輯</string>
     <string name="recent_artists">最近藝人</string>
     <string name="remove_action">移除</string>
@@ -446,8 +446,8 @@
     <string name="restored_previous_purchase_please_restart">已復原先前的購買。請重新開啟應用程式以啟用全數功能。</string>
     <string name="restored_previous_purchases">已復原先前購買。</string>
     <string name="restoring_purchase">正在復原購買…</string>
-    <string name="retro_music_player">LeOS Music Player</string>
-    <string name="retro_music_pro">LeOS Music Pro</string>
+    <string name="retro_music_player">LeOS-Music Player</string>
+    <string name="retro_music_pro">LeOS-Music Pro</string>
     <string name="ringtone_summary">應用程式需要取得權限以存取您的裝置設定，並將歌曲設為鈴聲</string>
     <string name="ringtone_title">鈴聲 (可選)</string>
     <string name="saf_delete_failed">檔案刪除失敗: %s</string>
@@ -470,7 +470,7 @@
     <string name="saved_playlist_to">已儲存播放清單至 %s。</string>
     <string name="saving_changes">儲存變更</string>
     <string name="scan_media">掃描媒體</string>
-    <string name="scanned_files">已掃描 %2$d 個檔案夾中的 %1$d 個。</string>
+    <string name="scanned_files">已掃描 %1$d 個檔案，共 %2$d 個。</string>
     <string name="scrobbles_label">音樂記錄</string>
     <string name="select_all">選取全部</string>
     <string name="selected">僅顯示已選取的標籤</string>
@@ -508,7 +508,7 @@
     <string name="suggestion_songs">建議</string>
     <string name="support_development">支持開發</string>
     <string name="swipe_to_unlock">滑動以解鎖</string>
-    <string name="synced_lyrics">同步歌詞</string>
+    <string name="synced_lyrics">動態歌詞</string>
     <string name="telegram_group">Telegram</string>
     <string name="telegram_group_summary">加入 Telegram 群組以討論臭蟲、提供建議、交流，以及探索更多</string>
     <string name="thank_you">感謝您！</string>
@@ -527,9 +527,9 @@
     <string name="track_list">曲目編號</string>
     <string name="translate">翻譯</string>
     <string name="translate_community">協助我們將應用程式本地化成您的語言</string>
-    <string name="try_retro_music_premium">立即嘗試 LeOS Music Premium</string>
+    <string name="try_retro_music_premium">立即嘗試 LeOS-Music Premium</string>
     <string name="twitter_page">Twitter</string>
-    <string name="twitter_page_summary">分享您為 LeOS Music 的設計</string>
+    <string name="twitter_page_summary">分享您為 LeOS-Music 的設計</string>
     <string name="unlabeled">隱藏標籤</string>
     <string name="unplayable_file">無法播放這首歌。</string>
     <string name="up_next">即將播放</string>
